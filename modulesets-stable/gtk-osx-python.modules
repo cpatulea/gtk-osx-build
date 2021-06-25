@@ -81,9 +81,7 @@
     </dependencies>
     <after>
       <dep package="python3"/>
-      <dep package="python2"/>
       <dep package="meta-gtk-osx-gtk3"/>
-      <dep package="meta-gtk-osx-gtk2"/>
     </after>
   </meson>
 
@@ -99,7 +97,6 @@
       <dep package="pycairo"/>
     </dependencies>
     <after>
-      <dep package="python2"/>
       <dep package="python3"/>
     </after>
    </meson>
@@ -116,7 +113,6 @@
       <dep package="pycairo"/>
     </dependencies>
     <after>
-      <dep package="python2"/>
       <dep package="python3"/>
     </after>
    </meson>
