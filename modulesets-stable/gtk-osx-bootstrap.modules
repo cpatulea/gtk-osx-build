@@ -113,6 +113,7 @@
     <dependencies>
       <dep package="libpng"/>
       <dep package="libjpeg"/>
+      <dep package="libwebp"/>
       <dep package="libtiff"/>
       <dep package="gtk-doc"/>
     </dependencies>
