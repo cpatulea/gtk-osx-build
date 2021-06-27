@@ -88,7 +88,7 @@
 			version="0.2-1"
 			checkoutdir="bomutils-debian-0.2-1"
 			repo="github.com">
-			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/packaging/MacOS/jhbuild/patches/bomutils-jhbuild-changeprefix.patch" strip="0" />
+			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/patches/bomutils-jhbuild-changeprefix.patch" strip="0" />
 		</branch>
 	</autotools>
 
