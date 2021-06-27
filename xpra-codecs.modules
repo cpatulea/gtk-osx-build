@@ -164,7 +164,6 @@
 		 <dependencies>
 			 <dep package="libjpeg"/>
 			 <dep package="libpng"/>
-			 <dep package="libtiff"/>
 		 </dependencies>
 	</autotools>
 

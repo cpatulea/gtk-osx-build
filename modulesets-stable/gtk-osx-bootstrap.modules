@@ -47,6 +47,7 @@
     </branch>
     <dependencies>
       <dep package="libjpeg"/>
+      <dep package="libwebp"/>
     </dependencies>
   </autotools>
 
