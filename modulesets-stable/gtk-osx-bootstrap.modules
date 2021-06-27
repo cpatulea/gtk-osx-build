@@ -90,6 +90,19 @@
     </dependencies>
   </autotools>
 
+  <distutils id="python3-pygments" python3="1">
+    <branch repo="files.pythonhosted.org"
+            module="/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz"
+            hash="sha256:a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"
+            version="2.9.0"/>
+    <dependencies>
+      <dep package="python3"/>
+    </dependencies>
+    <after>
+      <dep package="python3"/>
+    </after>
+  </distutils>
+
   <meson id="gtk-doc" mesonargs="-Dyelp_manual=false -Dtests=false">
     <branch version="1.33.2" module="gtk-doc/1.33/gtk-doc-1.33.2.tar.xz"
             hash="sha256:cc1b709a20eb030a278a1f9842a362e00402b7f834ae1df4c1998a723152bf43"/>
@@ -97,6 +110,7 @@
       <dep package="libxml2"/>
       <dep package="libxslt"/>
       <dep package="itstool"/>
+      <dep package="python3-pygments"/>
     </dependencies>
     <after>
       <dep package="python3"/>
