@@ -20,6 +20,7 @@
               href="https://gitlab.gnome.org/GNOME"/>
   <repository type="tarball" name="itstool" href="http://files.itstool.org/"/>
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
+  <repository type="tarball" name="files.pythonhosted.org" href="https://files.pythonhosted.org"/>
 
   <autotools id="libpng" autogenargs="--enable-shared" autogen-sh="configure">
     <branch version="1.6.37" module="libpng/libpng-1.6.37.tar.xz"
