@@ -76,6 +76,7 @@
 			repo="winswitch.org">
 			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/patches/lame-channels.patch" strip="1" />
 			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/patches/lame-remove-init-old.patch" strip="0" />
+			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/patches/0006-dont-use-outdated-symbol-list.patch" strip="1" />
 		</branch>
 		<dependencies>
 			<dep package="nasm"/>
