@@ -138,7 +138,7 @@
 			<patch file="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/patches/gtk-mac-bundler-pangofix.patch" strip="1"/>
 		</branch>
 		<dependencies>
-			<dep package="python"/>
+			<dep package="python2"/>
 		</dependencies>
 	</autotools>
 
