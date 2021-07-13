@@ -38,7 +38,7 @@
     <dependencies>
       <dep package="nasm"/>
     </dependencies>
-  </autotools>
+  </cmake>
 
   <autotools id="libtiff" autogen-sh="configure" autogenargs="--without-x">
     <branch version="4.2.0" module="libtiff/tiff-4.2.0.tar.gz"
