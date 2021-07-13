@@ -31,7 +31,7 @@
     </dependencies>
   </autotools>
 
-  <cmake id="libjpeg">
+  <cmake id="libjpeg" cmakeargs="-DCMAKE_INSTALL_LIBDIR=$JHBUILD_PREFIX/lib">
     <branch module="/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.0.tar.gz" version="2.1.0"
             hash="sha256:d6b7790927d658108dfd3bee2f0c66a2924c51ee7f9dc930f62c452f4a638c52"
             checkoutdir="libjpeg-turbo-2.1.0"
