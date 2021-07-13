@@ -31,10 +31,10 @@
     </dependencies>
   </autotools>
 
-  <autotools id="libjpeg" autogen-sh="configure" autogenargs="--with-jpeg8">
-    <branch module="project/libjpeg-turbo/1.5.3/libjpeg-turbo-1.5.3.tar.gz" version="1.5.3"
-                hash="sha256:b24890e2bb46e12e72a79f7e965f409f4e16466d00e1dd15d93d73ee6b592523"
-            repo="sourceforge" />
+  <cmake id="libjpeg">
+    <branch module="/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.0.tar.gz" version="2.1.0"
+            hash="sha256:d6b7790927d658108dfd3bee2f0c66a2924c51ee7f9dc930f62c452f4a638c52"
+            repo="github-tarball" />
     <dependencies>
       <dep package="nasm"/>
     </dependencies>
