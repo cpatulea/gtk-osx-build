@@ -62,9 +62,9 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/f4/d7/e2c8dc4e2ca4c864e97c98fabe4ce04b57314b0eb389870f8f34117b747a/zeroconf-0.33.1.tar.gz"
-			hash="sha256:ac88738639669f924859a4e01d9742f3783e619e710103f4a0d321a47f260fd2"
-			version="0.33.1"/>
+			module="/packages/11/28/70305dcdd02dd279dc48a6ef938a3166e9f7cf8b824e419aba722ab0b5ab/zeroconf-0.33.2.tar.gz"
+			hash="sha256:5a59425d225a1f5fba0196766fccf856d4686f653037108cbc643a76c1a884fd"
+			version="0.33.2"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
 			<dep package="python3-enum-compat"/>
