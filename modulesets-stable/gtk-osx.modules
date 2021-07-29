@@ -14,6 +14,8 @@
               href="ftp://ftp.freedesktop.org/pub/"/>
   <repository type="tarball" name="fontconfig"
 	      href="http://www.freedesktop.org/software/fontconfig/release/"/>
+  <repository type="tarball" name="hicolor"
+              href="https://icon-theme.freedesktop.org/releases/"/>
   <repository type="git" name="github" href="git://github.com/"/>
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
   <repository type="system" name="system"/>
@@ -222,6 +224,11 @@
     </after>
   </meson>
 
+  <autotools id="hicolor-icon-theme">
+    <branch module="hicolor-icon-theme-0.17.tar.xz" version="0.17"
+            repo="hicolor"/>
+  </autotools>
+
   <autotools id="xorg-util-macros">
     <branch repo="freedesktop" version="1.19.2"
             module="xorg/individual/util/util-macros-1.19.2.tar.bz2"
@@ -251,6 +258,7 @@
       <dep package="gdk-pixbuf"/>
       <dep package="gobject-introspection"/>
       <dep package="libepoxy"/>
+      <dep package="hicolor-icon-theme"/>
     </dependencies>
     <after>
       <dep package="meta-gtk-osx-bootstrap"/>
