@@ -63,8 +63,8 @@
   </autotools>
 
   <autotools id="python3" autogenargs="--enable-shared" autogen-sh="configure">
-    <branch repo="python" module="3.9.5/Python-3.9.5.tar.xz" version="3.9.5"
-            hash="sha256:0c5a140665436ec3dbfbb79e2dfb6d192655f26ef4a29aeffcb6d1820d716d83"
+    <branch repo="python" module="3.9.6/Python-3.9.6.tar.xz" version="3.9.6"
+            hash="sha256:01c529e3207738d8771caeb5ed6217e10745c21aa39832fe3185e1c87fdb6aedead97ce38dbb11e02d873654028bd8071c3f345c18452769520723284efe9dc1"
             />
     <dependencies>
       <dep package='readline'/>
