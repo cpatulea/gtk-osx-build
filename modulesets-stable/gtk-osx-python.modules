@@ -64,7 +64,8 @@
 
   <autotools id="python3" autogenargs="--enable-shared" autogen-sh="configure">
     <branch repo="python" module="3.9.6/Python-3.9.6.tar.xz" version="3.9.6"
-            hash="sha256:01c529e3207738d8771caeb5ed6217e10745c21aa39832fe3185e1c87fdb6aedead97ce38dbb11e02d873654028bd8071c3f345c18452769520723284efe9dc1"
+    https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz
+            hash="sha256:397920af33efc5b97f2e0b57e91923512ef89fc5b3c1d21dbfc8c4828ce0108a"
             />
     <dependencies>
       <dep package='readline'/>
