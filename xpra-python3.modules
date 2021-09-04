@@ -62,9 +62,9 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/98/a3/65e95ec9165cd208286b8dc826c4e47dd13fe13c83358019ebe205455ed2/zeroconf-0.33.3.tar.gz"
-			hash="sha256:b158c869f9b234aec6b0bd964cedb35786dd5382cf81d03a9356187a11b64c5c"
-			version="0.33.3"/>
+			module="/packages/74/9d/e3f93bb9dd957405e62df884f5c242e70e239b3b669bf02dd16b4b214e28/zeroconf-0.36.2.tar.gz"
+			hash="sha256:9f00378e0510bf02e2e9e77ce5816b1783fdbf62704eb15753a8b5d6d615b811"
+			version="0.36.2"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
 			<dep package="python3-enum-compat"/>
@@ -212,9 +212,9 @@
 
 	<distutils id="python3-cryptography" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/9b/77/461087a514d2e8ece1c975d8216bc03f7048e6090c5166bc34115afdaa53/cryptography-3.4.7.tar.gz"
-			hash="sha256:3d10de8116d25649631977cb37da6cbdd2d6fa0e0281d014a5b7d337255ca713"
-			version="3.4.7"/>
+			module="/packages/cc/98/8a258ab4787e6f835d350639792527d2eb7946ff9fc0caca9c3f4cf5dcfe/cryptography-3.4.8.tar.gz"
+			hash="sha256:94cc5ed4ceaefcbe5bf38c8fba6a21fc1d365bb8fb826ea1688e3370b2e24a1c"
+			version="3.4.8"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
