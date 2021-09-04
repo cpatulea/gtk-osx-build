@@ -13,9 +13,9 @@
 
 	<distutils id="python3-setuptools" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/db/e2/c0ced9ccffb61432305665c22842ea120c0f649eec47ecf2a45c596707c4/setuptools-57.4.0.tar.gz"
-			hash="sha256:6bac238ffdf24e8806c61440e755192470352850f3419a52f26ffe0a1a64f465"
-			version="57.4.0"/>
+			module="/packages/20/f7/205a71cc9cc68f23afd9f3083002d0fb0a8c2277baf41a528395552e13c0/setuptools-57.5.0.tar.gz"
+			hash="sha256:d9d3266d50f59c6967b9312844470babbdb26304fe740833a5f8d89829ba3a24"
+			version="57.5.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
