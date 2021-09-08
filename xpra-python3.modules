@@ -436,21 +436,6 @@
 		</after>
 	</distutils>
 
-	<distutils id="python3-lzo" python3="1">
-		<branch repo="files.pythonhosted.org"
-			module="/packages/af/60/41f17f56c920a956f1d4b9f04f9755c045b2b06b9dd933b33cdd37ab9fd7/python-lzo-1.12.tar.gz"
-			hash="sha256:97a8e46825e8f1abd84c2a3372bc09adae9745a5be5d3af2692cd850dac35345"
-			version="1.12">
-		</branch>
-		<dependencies>
-			<dep package="python3"/>
-			<dep package="lzo"/>
-		</dependencies>
-		<after>
-			<dep package="lzo"/>
-		</after>
-	</distutils>
-
 	<distutils id="python3-brotli" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/2a/18/70c32fe9357f3eea18598b23aa9ed29b1711c3001835f7cf99a9818985d0/Brotli-1.0.9.zip"
@@ -861,7 +846,6 @@
 		  <dep package="python3-pkgconfig"/>
 		  <dep package="python3-deprecation"/>
 		  <dep package="python3-lz4"/>
-		  <dep package="python3-lzo"/>
 		  <dep package="python3-brotli"/>
 		  <dep package="python3-ldap3"/>
 		  <dep package="python3-ldap"/>
