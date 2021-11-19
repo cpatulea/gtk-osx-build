@@ -92,13 +92,6 @@
 		</branch>
 	</autotools>
 
-	<autotools id="libmad" autogen-sh="configure">
-		<branch module="/src/libmad-0.15.1b.tar.gz"
-			version="0.15.1b"
-			hash="md5:1be543bc30c56fb6bea1d7bf6a64e66c"
-			repo="xpra.org"/>
-	</autotools>
-
 	<autotools id="faac" autogenargs="" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
 		<branch module="https:///knik0/faac/archive/1_30.tar.gz"
 			version="1.30" checkoutdir="faac-1_30"
@@ -233,7 +226,6 @@
 			<dep package="speex"/>
 			<dep package="lame"/>
 			<dep package="twolame"/>
-			<dep package="libmad"/>
 			<dep package="faac"/>
 			<dep package="faad2"/>
 			<dep package="flac"/>
