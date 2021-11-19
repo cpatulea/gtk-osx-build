@@ -32,9 +32,9 @@
   </autotools>
 
   <cmake id="libjpeg" cmakeargs="-DCMAKE_INSTALL_LIBDIR=$JHBUILD_PREFIX/lib">
-    <branch module="/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.1.tar.gz" version="2.1.1"
-            hash="sha256:20e9cd3e5f517950dfb7a300ad344543d88719c254407ffb5ad88d891bf701c4"
-            checkoutdir="libjpeg-turbo-2.1.1"
+    <branch module="/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.2.tar.gz" version="2.1.2"
+            hash="sha256:e7fdc8a255c45bc8fbd9aa11c1a49c23092fcd7379296aeaeb14d3343a3d1bed"
+            checkoutdir="libjpeg-turbo-2.1.2"
             repo="github-tarball" />
     <dependencies>
       <dep package="nasm"/>
