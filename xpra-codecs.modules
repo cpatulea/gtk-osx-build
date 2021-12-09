@@ -151,7 +151,7 @@
 	</autotools>
 
 	<meson id="libspng">
-		<branch module="/randy408/libspng/archive/v0.7.1.tar.gz" repo="github-tarball"
+		<branch module="/randy408/libspng/archive/v0.7.1.tar.gz" repo="github.com"
 			version="0.7.1"
 		hash="sha256:0726a4914ad7155028f3baa94027244d439cd2a2fbe8daf780c2150c4c951d8e"/>
 	</meson>
