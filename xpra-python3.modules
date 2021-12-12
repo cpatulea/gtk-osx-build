@@ -305,7 +305,7 @@
 	<distutils id="python3-paramiko" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/c1/c1/2d6bb1395c37d5d9dd11037fabe0348736a0de6f074a8ba61ede1ce35a46/paramiko-ng-2.8.8.tar.gz"
-			hash="sha256:21c8ad4d86006862ef32f6a1f68e563d3dd07fef4336b89a61d2f4c465806e8e"
+			hash="sha256:d11191bda27dea3d4cd080c41912bd286ba3879c49851b6c7fc286c2fd0d4497"
 			version="2.8.8"/>
 		<dependencies>
 			<dep package="python3"/>
