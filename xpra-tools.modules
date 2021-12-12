@@ -38,9 +38,9 @@
 		autogen-sh="Configure"
 		autogen-template="%(srcdir)s/%(autogen-sh)s -Dprefix=%(prefix)s %(autogenargs)s"
 		autogenargs="-des">
-		<branch module="/src/5.0/perl-5.24.0.tar.gz"
-			version="5.24.0"
-			hash="md5:c5bf7f3285439a2d3b6a488e14503701"
+		<branch module="/src/5.0/perl-5.24.4.tar.gz"
+			version="5.24.4"
+			hash="sha256:7f080287ff64750270689843ae945f02159a33cb8f2fc910248c15befba5db84"
 			repo="cpan.org"/>
 	</autotools>
 
@@ -60,23 +60,23 @@
 	</autotools>
 
 	<autotools id="cpio" autogen-sh="configure">
-		<branch module="/gnu/cpio/cpio-2.12.tar.bz2"
-			version="2.12"
-			hash="md5:93eea9f07c0058c097891c73e4955456"
+		<branch module="/gnu/cpio/cpio-2.13.tar.bz2"
+			version="2.13"
+			hash="sha256:eab5bdc5ae1df285c59f2a4f140a98fc33678a0bf61bdba67d9436ae26b46f6d"
 			repo="ftp.gnu.org"/>
 	</autotools>
 
 	<autotools id="pcre" autogenargs="--enable-utf8" autogen-sh="configure">
-		<branch module="/pub/pcre/pcre-8.44.tar.gz"
-			version="8.44"
-			hash="sha256:aecafd4af3bd0f3935721af77b889d9024b2e01d96b58471bd91a3063fb47728"
+		<branch module="/pub/pcre/pcre-8.45.tar.bz2"
+			version="8.45"
+			hash="sha256:4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8"
 			repo="ftp.pcre.org"/>
 	</autotools>
 
 	<autotools id="grep" autogen-sh="configure">
-		<branch module="/gnu/grep/grep-3.4.tar.xz"
-			version="3.4"
-			hash="sha256:58e6751c41a7c25bfc6e9363a41786cff3ba5709cf11d5ad903cf7cce31cc3fb"
+		<branch module="/gnu/grep/grep-3.7.tar.xz"
+			version="3.7"
+			hash="sha256:5c10da312460aec721984d5d83246d24520ec438dd48d7ab5a05dbc0d6d6823c"
 			repo="ftp.gnu.org"/>
 		<dependencies>
 			<dep package="pcre"/>
@@ -107,10 +107,10 @@
 	</cmake>
 
 	<autotools id="gmplib" autogen-sh="configure">
-		<branch module="/download/gmp/gmp-6.2.0.tar.xz"
-			version="6.2.0"
-			hash="sha256:258e6cd51b3fbdfc185c716d55f82c08aff57df0c6fbd143cf6ed561267a1526"
-			checkoutdir="gmp-6.2.0"
+		<branch module="/download/gmp/gmp-6.2.1.tar.xz"
+			version="6.2.1"
+			hash="sha256:fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2"
+			checkoutdir="gmp-6.2.1"
 			repo="gmplib.org"/>
 	</autotools>
 
@@ -142,18 +142,10 @@
 		</dependencies>
 	</autotools>
 
-	<autotools id="lzo" autogen-sh="configure">
-		<branch module="/opensource/lzo/download/lzo-2.10.tar.gz"
-			version="2.10"
-			hash="sha256:c0f892943208266f9b6543b3ae308fab6284c5c90e627931446fb49b4221a072"
-			checkoutdir="lzo-2.10"
-			repo="oberhumer.com"/>
-	</autotools>
-
 	<autotools id="curl" autogen-sh="configure">
-		<branch module="/download/curl-7.70.0.tar.xz"
-			version="7.70.0"
-			hash="sha256:032f43f2674008c761af19bf536374128c16241fb234699a55f9fb603fcfbae7"
+		<branch module="/download/curl-7.80.0.tar.xz"
+			version="7.80.0"
+			hash="sha256:a132bd93188b938771135ac7c1f3ac1d3ce507c1fcbef8c471397639214ae2ab"
 			repo="curl.haxx.se"/>
 		<dependencies>
 			<dep package="openssl"/>
@@ -162,9 +154,9 @@
 
 
 	<autotools id="sqlite" autogenargs="" autogen-sh="configure">
-		<branch module="/2017/sqlite-autoconf-3210000.tar.gz"
-			hash="sha256:d7dd516775005ad87a57f428b6f86afd206cb341722927f104d3f0cf65fbbbe3"
-			version="3210000"
+		<branch module="/2021/sqlite-autoconf-3370000.tar.gz"
+			hash="sha256:731a4651d4d4b36fc7d21db586b2de4dd00af31fd54fb5a9a4b7f492057479f7"
+			version="3370000"
 			repo="sqlite.org"/>
 	</autotools>
 
