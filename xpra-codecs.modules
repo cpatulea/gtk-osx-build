@@ -100,9 +100,9 @@
 	</autotools>
 
 	<autotools id="faad2" autogenargs="" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
-		<branch module="/knik0/faad2/archive/2_9_1.tar.gz"
-			version="2.9.1" checkoutdir="faad2-2_9_1"
-			hash="sha256:7fa33cff76abdda5a220ca5de0b2e05a77354f3b97f735193c2940224898aa9a"
+		<branch module="/knik0/faad2/archive/refs/tags/2_10_0.tar.gz"
+			version="2.10.0" checkoutdir="faad2-2_10_0"
+			hash="sha256:0c6d9636c96f95c7d736f097d418829ced8ec6dbd899cc6cc82b728480a84bfb"
 			repo="github.com"/>
 	</autotools>
 
@@ -128,9 +128,9 @@
 		autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s %(autogenargs)s"
 		autogenargs="--enable-vp8 --enable-vp9 --enable-pic --enable-static --disable-install-docs --enable-realtime-only --enable-runtime-cpu-detect --disable-libyuv --disable-avx512 --disable-unit-tests"
 		autogen-sh="configure">
-		<branch module="/webmproject/libvpx/archive/refs/tags/v1.10.0.tar.gz"
-			version="1.10.0" checkoutdir="libvpx-1.10.0"
-			hash="sha256:85803ccbdbdd7a3b03d930187cb055f1353596969c1f92ebec2db839fa4f834a"
+		<branch module="/webmproject/libvpx/archive/v1.11.0/libvpx-1.11.0.tar.gz"
+			version="1.11.0" checkoutdir="libvpx-1.11.0"
+			hash="sha256:965e51c91ad9851e2337aebcc0f517440c637c506f3a03948062e3d5ea129a83"
 			repo="github.com"/>
 		<dependencies>
 			<dep package="yasm"/>
@@ -215,9 +215,9 @@
 	</cmake>
 
 	<autotools id="libqrencode" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
-		<branch module="https://github.com/fukuchi/libqrencode/archive/v4.0.0.tar.gz"
-			version="4.0.0" checkoutdir="libqrencode-4.0.0"
-			hash="sha256:c2c8a8110354463a3332cb48abf8581c8d94136af4dc1418f891cc9c7719e3c1"
+		<branch module="https://github.com/fukuchi/libqrencode/archive/v4.1.1.tar.gz"
+			version="4.1.1" checkoutdir="libqrencode-4.1.1"
+			hash="sha256:5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c"
 			repo="github.com">
 		</branch>
 	</autotools>
