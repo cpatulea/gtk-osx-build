@@ -185,7 +185,7 @@
 	<distutils id="python3-setuptools_rust" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/67/08/e1aa2c582c62ac76e4d60f8e454bd3bba933781a06a88b4e38797445822a/setuptools-rust-1.1.2.tar.gz"
-			hash="sha256:72288a34cbb2efc436227f61548a453e91b2b3de1ca5846ab5d6bbcb859595c7"
+			hash="sha256:a0adb9b503c0ffc4e8fe80b7c617898cefa78049983aaaea7f747e153a3e65d1"
 			version="1.1.2"/>
 		<dependencies>
 			<dep package="python3"/>
