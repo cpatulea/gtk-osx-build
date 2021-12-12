@@ -50,7 +50,7 @@
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/5e/82/791c22d47f4622ce83553756461b682a0a1be1cbc0251201c6cf58a3fd66/zeroconf-0.37.0.tar.gz"
-			hash="sha256:196fa1bd6e166f0333e3e9fff076f9991bf2719c4788287eaec577c241ef96bf"
+			hash="sha256:f901eda390160bc270aeba95ef2d6aa0a736503301dac393e7d5fd95fa17043a"
 			version="0.37.0"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
