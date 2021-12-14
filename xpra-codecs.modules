@@ -139,6 +139,7 @@
 
 	<autotools id="x264" autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s %(autogenargs)s" autogenargs="--enable-pic --enable-shared --enable-static" autogen-sh="configure">
 		<branch module="/mirror/x264/archive/5db6aa6cab1b146e07b60cc1736a01f21da01154.zip"
+			checkoutdir="x264-5db6aa6cab1b146e07b60cc1736a01f21da01154"
 			version="20210613-stable"
 			hash="sha256:f3795b0b428e1b329305b2c19eb244e3e911231023f5bb8456dcb705a74d9545"
 			repo="github.com"/>
