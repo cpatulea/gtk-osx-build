@@ -250,7 +250,8 @@
             hash="sha256:ba75bfff320ad1f4cfbee92ba813ec336322cc3c660d406aad014b07087a3ba9">
       <patch file="Quartz-version-detection-for-macOS-12.patch" strip="1"/>
       <patch file="gtk+-scale-absolute-value.patch" strip="1"/>
-      <patch file="https://xpra.org/svn/Xpra/trunk/osx/jhbuild/patches/0001-propagates-unhandled-keyboard-events-back-to-OS-on-OSX.patch" strip="1"/>
+      <patch file="gtk+-quartz-header-path.patch" strip="1"/>
+      <patch file="0001-propagates-unhandled-keyboard-events-back-to-OS-on-OSX.patch" strip="1"/>
     </branch>
     <dependencies>
       <dep package="glib"/>
