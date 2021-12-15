@@ -2,8 +2,8 @@
 <!DOCTYPE moduleset SYSTEM "moduleset.dtd">
 <?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
 <moduleset>
-  <repository type="tarball" name="ftp.gnome.org" default="yes"
-              href="http://download.gnome.org/sources/"/>
+  <repository type="tarball" name="download.gnome.org" default="yes"
+              href="https://download.gnome.org/sources/"/>
   <repository type="tarball" name="tango.freedesktop.org"
               href="http://tango.freedesktop.org/releases/"/>
   <repository type="tarball" name="icon-theme.freedesktop.org"

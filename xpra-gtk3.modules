@@ -4,8 +4,8 @@
 <moduleset>
 
 	<repository type="tarball" name="xpra.org" href="https://xpra.org"/>
-	<repository type="tarball" name="ftp.gnome.org" default="yes"
-				href="http://ftp.gnome.org/pub/GNOME/sources/"/>
+	<repository type="tarball" name="download.gnome.org" default="yes"
+				href="https://download.gnome.org/sources/"/>
 
 	<include href="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/modulesets-stable/gtk-osx.modules"/>
 	<include href="xpra-tools.modules"/>
