@@ -814,7 +814,6 @@
 		<dependencies>
 		  <dep package="python3-setuptools"/>
 		  <dep package="python3-coverage"/>
-		  <dep package="python3-enum-compat"/>
 		  <dep package="python3-zeroconf"/>
 		  <dep package="python3-netifaces"/>
 		  <dep package="python3-pyasn1"/>
