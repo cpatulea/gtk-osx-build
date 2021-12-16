@@ -84,7 +84,7 @@
 	</autotools>
 
 	<autotools id="bomutils" autogen-sh="" skip-autogen="true" supports-non-srcdir-builds="no">
-		<branch module="/PeeK1e/bomutils/archive/refs/tags/0.2.tar.gz"
+		<branch module="/PeeK1e/bomutils/tar.gz/refs/tags/0.2"
 			version="0.2-1"
 			checkoutdir="bomutils-debian-0.2-1"
 			repo="github.com">
