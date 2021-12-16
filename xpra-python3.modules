@@ -641,7 +641,9 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/cf/a5/fa85267c69a2f31ea4d1ae8fb0233e74adecc89f0c970d0249eb12c25722/pyobjc-core-8.1.tar.gz"
 			hash="sha256:920914a1a4cd4f8a54babe93f0b4e4cd93b51d11ae38d8ef17f5edb603b7a949"
-			version="8.1"/>
+			version="8.1">
+			<patch file="pyobjc-unused-parameter.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>

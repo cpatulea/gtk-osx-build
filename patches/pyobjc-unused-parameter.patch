@@ -1,0 +1,10 @@
+--- a/setup.py	2021-12-15 02:55:58.000000000 -0800
++++ b/setup.py	2021-12-15 02:56:26.000000000 -0800
+@@ -87,6 +87,7 @@
+     # "-fsanitize=address", "-fsanitize=undefined", "-fno-sanitize=vptr",
+     # "--analyze",
+     "-Werror",
++    "-Wno-error=unused-parameter",
+     "-I/usr/include/ffi",
+     "-fvisibility=hidden",
+     # -O0", "-g"
