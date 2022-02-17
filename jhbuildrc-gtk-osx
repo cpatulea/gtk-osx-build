@@ -126,7 +126,10 @@ def osx_ver():
     exp = re.compile(r'(\d+\.\d+)\.\d+')
     vernum = exp.match(vstring)
     _osx_version = float(vernum.group(1)) - 4.0
-    _target = '10.%d' % int(_osx_version)
+    if _osx_version < 16:
+        _target = '10.%d' % int(_osx_version)
+    else:
+        _target = '%d' % (_osx_version - 5)
 
     _default_arch = _popen("uname -m")
 
@@ -612,7 +615,9 @@ if not _ran_recursively and _gtk_osx_prompt_prefix:
 # Note that this will break if there's an undetected python3 build and
 # the built python is a different major + minor version from the
 # virtenv one.
-if 'python3' in modules or 'meta-gtk-osx-python3' in modules:
+
+if ('python3' in modules or 'meta-gtk-osx-python3' in modules or
+    'pygments' in modules):
     os.environ['PYTHON'] = os.path.join(prefix, 'bin', 'python3')
     module_extra_env['pkg-config'] = {'PYTHON':sys.executable}
 else:
@@ -622,6 +627,9 @@ else:
     append_autogenargs('libxml2',
                        '--with-python-install-dir=' + _python_install_path)
     environ_append('PYTHONPATH', _python_install_path, ':')
+    _python_library_path = os.path.join(os.environ['PYENV_ROOT'], 'versions',
+                                       os.environ['PYENV_PYTHON_VERSION'], 'lib')
+    environ_append('LDFLAGS', '-L' + _python_library_path)
     os.environ['PYTHON'] = sys.executable
 
 module_extra_env["pygtk"] = {'PYTHON':os.path.join(prefix, 'bin', 'python2')}
