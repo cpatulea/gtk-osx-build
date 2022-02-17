@@ -164,7 +164,7 @@ verify_ssl = true
 
 [packages]
 pygments = "*"
-meson = {version=">=0.56.0"}
+meson = {version=">=0.59.0"}
 
 [scripts]
 jhbuild = "$DEVPREFIX/libexec/run_jhbuild.py"
