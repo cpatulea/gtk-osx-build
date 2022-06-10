@@ -120,9 +120,9 @@
 
 	<distutils id="python3-parsing" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/d6/60/9bed18f43275b34198eb9720d4c1238c68b3755620d20df0afd89424d32b/pyparsing-3.0.7.tar.gz"
-			hash="sha256:18ee9022775d270c55187733956460083db60b37d0d0fb357445f3094eed3eea"
-			version="3.0.7"/>
+			module="/packages/71/22/207523d16464c40a0310d2d4d8926daffa00ac1f5b1576170a32db749636/pyparsing-3.0.9.tar.gz"
+			hash="sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"
+			version="3.0.9"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -146,9 +146,9 @@
 
 	<distutils id="python3-asn1crypto" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/6b/b4/42f0e52ac2184a8abb31f0a6f98111ceee1aac0b473cee063882436e0e09/asn1crypto-1.4.0.tar.gz"
-			hash="sha256:f4f6e119474e58e04a2b1af817eb585b4fd72bdd89b998624712b5c99be7641c"
-			version="1.4.0"/>
+			module="/packages/de/cf/d547feed25b5244fcb9392e288ff9fdc3280b10260362fc45d37a798a6ee/asn1crypto-1.5.1.tar.gz"
+			hash="sha256:13ae38502be632115abf8a24cbe5f4da52e3b5231990aff31123c805306ccb9c"
+			version="1.5.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -280,9 +280,9 @@
 
 	<distutils id="python3-bcrypt" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/d8/ba/21c475ead997ee21502d30f76fd93ad8d5858d19a3fad7cd153de698c4dd/bcrypt-3.2.0.tar.gz"
-			hash="sha256:5b93c1726e50a93a033c36e5ca7fdcd29a5c7395af50a6892f5d9e7c6cfbfb29"
-			version="3.2.0"/>
+			module="/packages/e8/36/edc85ab295ceff724506252b774155eff8a238f13730c8b13badd33ef866/bcrypt-3.2.2.tar.gz"
+			hash="sha256:433c410c2177057705da2a9f2cd01dd157493b2a7ac14c8593a16b3dab6b6bfb"
+			version="3.2.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -307,8 +307,8 @@
 	<distutils id="python3-paramiko" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/ea/01/f4c41238b4e4cae41502598c79a62785bdfe9fb5bb54728775805bd0b5d8/paramiko-2.9.2.tar.gz"
-			hash="sha256:944a9e5dbdd413ab6c7951ea46b0ab40713235a9c4c5ca81cfe45c6f14fa677b"
-			version="2.9.2"/>
+			hash="sha256:003e6bee7c034c21fbb051bf83dc0a9ee4106204dd3c53054c71452cc4ec3938"
+			version="2.11.0"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-bcrypt"/>
@@ -387,9 +387,9 @@
 
 	<distutils id="python3-test-runner" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/2a/04/c3223812b3427ffa95110c5781eae7fe8bc3e9e1fe4e2328bee17b9e5820/pytest-runner-5.3.1.tar.gz"
-			hash="sha256:0fce5b8dc68760f353979d99fdd6b3ad46330b6b1837e2077a89ebcf204aac91"
-			version="5.3.1"/>
+			module="/packages/2b/b2/5a07a37f314d3c0457c5431fd5b130e04355fa143f042356f77dd1570d36/pytest-runner-6.0.0.tar.gz"
+			hash="sha256:b4d85362ed29b4c348678de797df438f0f0509497ddb8c647096c02a6d87b685"
+			version="6.0.0"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-setuptools-scm"/>
