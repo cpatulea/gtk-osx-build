@@ -157,9 +157,9 @@
 	</meson>
 
 	<autotools id="libwebp" autogenargs="" autogen-sh="configure" supports-non-srcdir-builds="no">
-		 <branch module="/releases/webp/libwebp-1.2.2.tar.gz"
-			 version="1.2.2"
-			 hash="sha256:7656532f837af5f4cec3ff6bafe552c044dc39bf453587bd5b77450802f4aee6"
+		 <branch module="/releases/webp/libwebp-1.2.3.tar.gz"
+			 version="1.2.3"
+			 hash="sha256:f5d7ab2390b06b8a934a4fc35784291b3885b557780d099bd32f09241f9d83f9"
 			 repo="downloads.webmproject.org"/>
 		 <dependencies>
 			 <dep package="libjpeg"/>
