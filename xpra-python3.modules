@@ -738,6 +738,19 @@
 		</after>
 	</distutils>
 
+	<distutils id="python3-pysocks" python3="1">
+		<branch repo="files.pythonhosted.org"
+			module="/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz"
+			hash="sha256:3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0"
+			version="1.7.1" />
+		<dependencies>
+			<dep package="python3"/>
+		</dependencies>
+		<after>
+			<dep package="python3"/>
+		</after>
+	</distutils>
+
 	<distutils id="python3-yaml" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz"
@@ -834,6 +847,7 @@
 		  <dep package="python3-ipaddress"/>
 		  <dep package="python3-idna"/>
 		  <dep package="python3-cryptography"/>
+		  <dep package="python3-pysocks"/>
 		  <dep package="python3-rencode"/>
 		  <dep package="python3-yaml"/>
 		  <dep package="python3-psutil"/>
