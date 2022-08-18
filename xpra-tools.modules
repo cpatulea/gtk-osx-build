@@ -45,11 +45,10 @@
 	</autotools>
 
 	<autotools id="lz4" skip-autogen="true" supports-non-srcdir-builds="no">
-		<branch module="/lz4/lz4/archive/v1.9.4.tar.gz"
-			version="1.9.4"
+		<branch module="/lz4/lz4/archive/refs/tags/v1.9.4.tar.gz"
 			checkoutdir="lz4-1.9.4"
 			hash="sha256:0b0e3aa07c8c063ddf40b082bdf7e37a1562bda40a0ff5272957f3e987e0e54b"
-			repo="github.com"/>
+			/>
 	</autotools>
 
 	<autotools id="sshpass" autogen-sh="configure">
