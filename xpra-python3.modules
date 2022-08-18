@@ -308,7 +308,9 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/ea/01/f4c41238b4e4cae41502598c79a62785bdfe9fb5bb54728775805bd0b5d8/paramiko-2.9.2.tar.gz"
 			hash="sha256:003e6bee7c034c21fbb051bf83dc0a9ee4106204dd3c53054c71452cc4ec3938"
-			version="2.11.0"/>
+			version="2.11.0">
+			<patch file="paramiko-noblowfish.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-bcrypt"/>
