@@ -49,6 +49,19 @@
 		</after>
 	</distutils>
 
+	<distutils id="python3-async-timeout" python3="1">
+		<branch repo="files.pythonhosted.org"
+			module="/packages/54/6e/9678f7b2993537452710ffb1750c62d2c26df438aa621ad5fa9d1507a43a/async-timeout-4.0.2.tar.gz"
+			hash="sha256:2163e1640ddb52b7a8c80d0a67a08587e5d245cc9c553a74a847056bc2976b15"
+			version="4.0.2"/>
+		<dependencies>
+			<dep package="python3-ifaddr"/>
+		</dependencies>
+		<after>
+			<dep package="python3"/>
+		</after>
+	</distutils>
+
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/2b/a5/0ad52f3dd265fd2538b882eb6682eaeee12d2ba4dd55a20ac65374bbf67d/zeroconf-0.39.0.tar.gz"
@@ -56,6 +69,7 @@
 			version="0.39.0"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
+			<dep package="python3-async-timeout"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
@@ -730,6 +744,7 @@
 		<dependencies>
 		  <dep package="python3-setuptools"/>
 		  <dep package="python3-coverage"/>
+		  <dep package="python3-async-timeout"/>
 		  <dep package="python3-zeroconf"/>
 		  <dep package="python3-netifaces"/>
 		  <dep package="python3-pyasn1"/>
