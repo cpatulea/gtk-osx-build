@@ -35,9 +35,9 @@
   <autotools id="spidermonkey" autogen-sh="configure"
              autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s %(autogenargs)s"
              autogenargs="--with-system-nspr --with-system-icu --disable-jemalloc --with-intl-api --enable-optimize --enable-coverage">
-    <branch repo="mozilla" version="78.1.0" 
+    <branch repo="mozilla" version="78.1.0"
             checkoutdir="firefox-78.1.0" source-subdir="js/src"
-            module="firefox/releases/78.1.0esr/firefox-78.1.0esr.source.tar.xz" 
+            module="firefox/releases/78.1.0esr/firefox-78.1.0esr.source.tar.xz"
             hash="sha256:3600a396d9312c5e9f637b267926ca4771d84a56b26b960cc7d72e98683b64a2">
       <patch file="firefox78-rust-manifest-and-max-sdk.patch" strip="1"/>
     </branch>

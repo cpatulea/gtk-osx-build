@@ -45,7 +45,7 @@
       <dep package="mm-common"/>
     </dependencies>
  </autotools>
- 
+
  <meson id="glibmm">
     <branch module="glibmm/2.68/glibmm-2.68.0.tar.xz" version="2.68.0"
             hash="sha256:c1f38573191dceed85a05600888cf4cf4695941f339715bd67d51c2416f4f375">

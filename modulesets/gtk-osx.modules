@@ -239,7 +239,7 @@
              autogenargs="--disable-tests --disable-static">
     <branch repo="github" revision="3.6.4" module="sass/libsass"/>
   </autotools>
-     
+
   <autotools id="gtk-4"
          autogenargs="--enable-quartz-backend --enable-quartz-relocation --disable-colord">
     <branch module="gtk" checkoutdir="gtk-4.0" revision="gtk-4.0"/>
