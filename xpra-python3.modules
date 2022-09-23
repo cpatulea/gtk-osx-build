@@ -64,9 +64,9 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/2b/a5/0ad52f3dd265fd2538b882eb6682eaeee12d2ba4dd55a20ac65374bbf67d/zeroconf-0.39.0.tar.gz"
-			hash="sha256:7c0d8257b940ee43e637fb560c2f9bd79da0638f37af162eb4f506f7274ef8e4"
-			version="0.39.0"/>
+			module="/packages/ef/e4/a43283a5dc0ad6dd1f1094a02ad40cb17623b589b86991fd997e5627efe9/zeroconf-0.39.1.tar.gz"
+			hash="sha256:b83cff68a0c8dcd2705b5e792796239accba2bfddb09bc8d05badc642f64e7f6"
+			version="0.39.1"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
 			<dep package="python3-async-timeout"/>
@@ -104,9 +104,9 @@
 
 	<distutils id="python3-cffi" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/00/9e/92de7e1217ccc3d5f352ba21e52398372525765b2e0c4530e6eb2ba9282a/cffi-1.15.0.tar.gz"
-			hash="sha256:920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954"
-			version="1.15.0"/>
+			module="/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz"
+			hash="sha256:d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
+			version="1.15.1"/>
 		<dependencies>
 	        <dep package="libffi"/>
 			<dep package="python3"/>
@@ -214,9 +214,9 @@
 
 	<distutils id="python3-cryptography" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/89/d9/5fcd312d5cce0b4d7ee8b551a0ea99e4ea9db0fdbf6dd455a19042e3370b/cryptography-37.0.4.tar.gz"
-			hash="sha256:63f9c17c0e2474ccbebc9302ce2f07b55b3b3fcb211ded18a42d5764f5c10a82"
-			version="37.0.4"/>
+			module="/packages/6d/0c/5e67831007ba6cd7e52c4095f053cf45c357739b0a7c46a45ddd50049019/cryptography-38.0.1.tar.gz"
+			hash="sha256:1db3d807a14931fa317f96435695d9ec386be7b84b618cc61cfa5d08b0ae33d7"
+			version="38.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
@@ -294,9 +294,9 @@
 
 	<distutils id="python3-bcrypt" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/e8/36/edc85ab295ceff724506252b774155eff8a238f13730c8b13badd33ef866/bcrypt-3.2.2.tar.gz"
-			hash="sha256:433c410c2177057705da2a9f2cd01dd157493b2a7ac14c8593a16b3dab6b6bfb"
-			version="3.2.2"/>
+			module="/packages/99/f2/b71b9b5b2400fffac7d42c560ac89f302c4d8e328337b2f05f0a4d9e590d/bcrypt-4.0.0.tar.gz"
+			hash="sha256:c59c170fc9225faad04dde1ba61d85b413946e8ce2e5f5f5ff30dfd67283f319"
+			version="4.0.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -378,9 +378,9 @@
 
 	<distutils id="python3-ldap" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/8f/cf/879cdfd3a039e5b1492dd3be7257116018fe0060f4c6ad0c34e9007a8c0f/python-ldap-3.4.2.tar.gz"
-			hash="sha256:b16470a0983aaf09a00ffb8f40b69a2446f3d0be639a229256bce381fcb268f7"
-			version="3.4.2">
+			module="/packages/3a/7d/de9ae3e5843de77eae3a60c1e70ef5cad9960db50521e8459f7d567a1d1d/python-ldap-3.4.3.tar.gz"
+			hash="sha256:ab26c519a0ef2a443a2a10391fa3c5cb52d7871323399db949ebfaa9f25ee2a0"
+			version="3.4.3">
 		</branch>
 		<dependencies>
 			<dep package="python3-pyasn1"/>
@@ -448,9 +448,9 @@
 
 	<distutils id="python3-gssapi" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/94/a3/017f779dae311964aa919bb57852ec4ce9b30ad4a5973d8bee1022f192ec/gssapi-1.7.3.tar.gz"
-			hash="sha256:c69b9f633a0c03c1b84ba14c73b0ec132f6323056e675702c1a5f75f316e06fb"
-			version="1.7.3">
+			module="/packages/18/02/c6e3d025f279c3ef15f382180010b67f1b141e72480e0d46a97191f3adbf/gssapi-1.8.1.tar.gz"
+			hash="sha256:893aa38ae769d1febe89963aa9f59194a966736ade2263fe14e0081126d64a72"
+			version="1.8.1">
 		</branch>
 		<dependencies>
 			<dep package="python3-decorator"/>
@@ -729,9 +729,9 @@
 
 	<distutils id="python3-idna" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz"
-			hash="sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
-			version="3.3"/>
+			module="/packages/8b/e1/43beb3d38dba6cb420cefa297822eac205a277ab43e5ba5d5c46faf96438/idna-3.4.tar.gz"
+			hash="sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"
+			version="3.4"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
