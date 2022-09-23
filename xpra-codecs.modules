@@ -106,9 +106,9 @@
 	</autotools>
 
 	<autotools id="flac" autogenargs="--disable-asm-optimizations" autogen-sh="configure">
-		<branch module="/releases/flac/flac-1.4.0.tar.xz"
-			version="1.4.0"
-			hash="sha256:af41c0733c93c237c3e52f64dd87e3b0d9af38259f1c7d11e8cbf583c48c2506"
+		<branch module="/releases/flac/flac-1.4.1.tar.xz"
+			version="1.4.1"
+			hash="sha256:91303c3e5dfde52c3e94e75976c0ab3ee14ced278ab8f60033a3a12db9209ae6"
 			repo="downloads.xiph.org"/>
 		<dependencies>
 			<dep package="nasm"/>
@@ -183,9 +183,9 @@
 					--disable-filter=atrim --disable-filter=null
 					--disable-programs --disable-avfilter --disable-doc"
 		autogen-sh="configure">
-        <branch module="/releases/ffmpeg-5.1.tar.xz"
-            version="5.1"
-            hash="sha256:55eb6aab5ee235550fa54a33eaf8bf1b4ec66c01453182b12f6a993d75698b03"
+        <branch module="/releases/ffmpeg-5.1.1.tar.xz"
+            version="5.1.1"
+            hash="sha256:95bf3ff8c496511e71e958fb249e663c8c9c3de583c5bebc0f5a9745abbc0435"
 			repo="ffmpeg.org"/>
 		<dependencies>
 			<dep package="x264"/>
