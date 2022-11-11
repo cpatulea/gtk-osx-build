@@ -70,6 +70,9 @@
       <dep package='readline'/>
       <dep package="openssl"/> <!-- For hashlib -->
     </dependencies>
+    <after>
+      <dep package="openssl"/>
+    </after>
   </autotools>
 
   <meson id="pycairo">

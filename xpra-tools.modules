@@ -26,11 +26,11 @@
 
 	<!-- of the many arguments such as prefix and libdir that jhbuild might pass
 		to configure, openssl only understands prefix, and only with =. -->
-	<autotools id="openssl" autogen-sh="./config" autogenargs="shared"
-		autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s --openssldir=%(prefix)s/etc/ssl"
-		makeinstallargs="install_sw" supports-non-srcdir-builds="no">
-	    <branch module="openssl-1.1.1m.tar.gz" version="1.1.1m"
-			hash="sha256:f89199be8b23ca45fc7cb9f1d8d3ee67312318286ad030f5316aca6462db6c96" repo="openssl"/>
+	<autotools id="openssl" autogen-sh="Configure" autogenargs="shared "
+			autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s --openssldir=%(prefix)s/etc/ssl %(autogenargs)s"
+			makeinstallargs="install_sw" supports-non-srcdir-builds="no">
+		<branch module="openssl-3.0.7.tar.gz" version="3.0.7" repo="openssl"
+			hash="sha256:83049d042a260e696f62406ac5c08bf706fd84383f945cf21bd61e9ed95c396e"/>
 	</autotools>
 
 
