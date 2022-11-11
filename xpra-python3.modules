@@ -322,7 +322,7 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/1d/08/3b8d8f1b4ec212c17429c2f3ff55b7f2237a1ad0c954972e39c8f0ac394c/paramiko-2.11.0.tar.gz"
 			hash="sha256:003e6bee7c034c21fbb051bf83dc0a9ee4106204dd3c53054c71452cc4ec3938"
-			version="2.11.0"/>
+			version="2.11.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
@@ -338,7 +338,7 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/ba/86/6dda1760481abf244cbd3908b79a4520d757040ca9ec37a79fc0fd01e2a0/uvloop-0.17.0.tar.gz"
 			hash="sha256:0ddf6baf9cf11a1a22c71487f39f15b2cf78eb5bde7e5b45fbb99e8a9d91b9e1"
-			version="0.17.0"/>
+			version="0.17.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
@@ -352,7 +352,7 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/e7/2f/c6d89edac75482f11e231b644e365d31d5479b7b727734e6a8f3d00decd5/pyOpenSSL-22.1.0.tar.gz"
 			hash="sha256:7a83b7b272dd595222d672f5ce29aa030f1fb837630ef229f62e72e395ce8968"
-			version="22.1.0"/>
+			version="22.1.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
@@ -368,7 +368,7 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/54/cf/7eac98d6ffb5c6ad0e5fba84a6ca39993c93f9e0208055d35a788e4a0049/pylsqpack-0.3.16.tar.gz"
 			hash="sha256:148c1a78c232e4d52049ef6f55d6475ab3925efe55abb25cf593b31f2908f5d7"
-			version="0.3.16"/>
+			version="0.3.16">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
@@ -382,7 +382,7 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/91/93/53f91b13c15b45386e0faa84c89f0e09a3eceb3903c856519b6681faf88c/aioquic-0.9.20.tar.gz"
 			hash="sha256:ec436aaace997b846b01e5200edbf7e3e56b91826a144efb9748fd8ddd332bbe"
-			version="0.9.20"/>
+			version="0.9.20">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
