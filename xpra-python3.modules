@@ -378,6 +378,20 @@
 		</after>
 	</distutils>
 
+	<distutils id="python3-certifi" python3="1">
+		<branch repo="files.pythonhosted.org"
+			module="/packages/cb/a4/7de7cd59e429bd0ee6521ba58a75adaec136d32f91a761b28a11d8088d44/certifi-2022.9.24.tar.gz"
+			hash="sha256:0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14"
+			version="2022.9.24">
+		</branch>
+		<dependencies>
+			<dep package="python3"/>
+		</dependencies>
+		<after>
+			<dep package="python3"/>
+		</after>
+	</distutils>
+
 	<distutils id="python3-aioquic" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/91/93/53f91b13c15b45386e0faa84c89f0e09a3eceb3903c856519b6681faf88c/aioquic-0.9.20.tar.gz"
@@ -390,6 +404,7 @@
 			<dep package="python3-pycparser"/>
 			<dep package="python3-pyopenssl"/>
 			<dep package="python3-pylsqpack"/>
+			<dep package="python3-certifi"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
@@ -820,6 +835,7 @@
 		  <dep package="python3-uvloop"/>
 		  <dep package="python3-pyopenssl"/>
 		  <dep package="python3-pylsqpack"/>
+		  <dep package="python3-certifi"/>
 		  <dep package="python3-aioquic"/>
 		  <dep package="python3-dns"/>
 		  <dep package="python3-ldap3"/>
