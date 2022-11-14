@@ -198,6 +198,19 @@
 		</after>
 	</distutils>
 
+	<distutils id="python3-typing-extensions" python3="1">
+		<branch repo="files.pythonhosted.org"
+			module="/packages/e3/a7/8f4e456ef0adac43f452efc2d0e4b242ab831297f1bac60ac815d37eb9cf/typing_extensions-4.4.0.tar.gz"
+			hash="sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"
+			version="4.4.0"/>
+		<dependencies>
+			<dep package="python3"/>
+		</dependencies>
+		<after>
+			<dep package="python3"/>
+		</after>
+	</distutils>
+
 	<distutils id="python3-setuptools_rust" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/67/08/e1aa2c582c62ac76e4d60f8e454bd3bba933781a06a88b4e38797445822a/setuptools-rust-1.1.2.tar.gz"
@@ -206,6 +219,7 @@
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-semantic-version"/>
+			<dep package="python3-typing-extensions"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
