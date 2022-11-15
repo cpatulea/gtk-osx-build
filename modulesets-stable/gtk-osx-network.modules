@@ -18,6 +18,7 @@
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
   <repository name="libuv.org" type="tarball"
               href="https://dist.libuv.org/dist/"/>
+  <repository name="zlib.net" type="tarball" href="https://zlib.net"/>
 
 
 
@@ -75,9 +76,9 @@
 
   <autotools id="zlib" autogen-sh="configure" skip-autogen="never"
              supports-non-srcdir-builds="no">
-    <branch repo="sourceforge" version="1.2.11"
-            module="libpng/zlib-1.2.11.tar.xz"
-            hash="sha256:4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066"/>
+    <branch repo="zlib.net" version="1.2.13"
+            module="/zlib-1.2.13.tar.xz"
+            hash="sha256:b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30"/>
   </autotools>
 
   <autotools id="p11-kit" autogen-sh="configure"

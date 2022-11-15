@@ -64,9 +64,9 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/ef/e4/a43283a5dc0ad6dd1f1094a02ad40cb17623b589b86991fd997e5627efe9/zeroconf-0.39.1.tar.gz"
-			hash="sha256:b83cff68a0c8dcd2705b5e792796239accba2bfddb09bc8d05badc642f64e7f6"
-			version="0.39.1"/>
+			module="/packages/f5/4f/c47cea73d7ae5467b63de3999d7207fd5b14d70cb2f35ce81c4ab7d7a52e/zeroconf-0.39.4.tar.gz"
+			hash="sha256:701e4d697f89fe952aa9c13a512ed6bf472dcf4f0a6d275e71085604b3882295"
+			version="0.39.4"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
 			<dep package="python3-async-timeout"/>
@@ -228,9 +228,9 @@
 
 	<distutils id="python3-cryptography" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/6d/0c/5e67831007ba6cd7e52c4095f053cf45c357739b0a7c46a45ddd50049019/cryptography-38.0.1.tar.gz"
-			hash="sha256:1db3d807a14931fa317f96435695d9ec386be7b84b618cc61cfa5d08b0ae33d7"
-			version="38.0.1"/>
+			module="/packages/13/dd/a9608b7aebe5d2dc0c98a4b2090a6b815628efa46cc1c046b89d8cd25f4c/cryptography-38.0.3.tar.gz"
+			hash="sha256:bfbe6ee19615b07a98b1d2287d6a6073f734735b49ee45b11324d85efc4d5cbd"
+			version="38.0.3"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
@@ -308,9 +308,9 @@
 
 	<distutils id="python3-bcrypt" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/99/f2/b71b9b5b2400fffac7d42c560ac89f302c4d8e328337b2f05f0a4d9e590d/bcrypt-4.0.0.tar.gz"
-			hash="sha256:c59c170fc9225faad04dde1ba61d85b413946e8ce2e5f5f5ff30dfd67283f319"
-			version="4.0.0"/>
+			module="/packages/8c/ae/3af7d006aacf513975fd1948a6b4d6f8b4a307f8a244e1a3d3774b297aad/bcrypt-4.0.1.tar.gz"
+			hash="sha256:27d375903ac8261cfe4047f6709d16f7d18d39b1ec92aaf72af989552a650ebd"
+			version="4.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -334,9 +334,9 @@
 
 	<distutils id="python3-paramiko" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/1d/08/3b8d8f1b4ec212c17429c2f3ff55b7f2237a1ad0c954972e39c8f0ac394c/paramiko-2.11.0.tar.gz"
-			hash="sha256:003e6bee7c034c21fbb051bf83dc0a9ee4106204dd3c53054c71452cc4ec3938"
-			version="2.11.0">
+			module="/packages/98/75/e78ddbe671a4a59514b59bc6a321263118e4ac3fe88175dd784d1a47a00f/paramiko-2.12.0.tar.gz"
+			hash="sha256:376885c05c5d6aa6e1f4608aac2a6b5b0548b1add40274477324605903d9cd49"
+			version="2.12.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
@@ -539,9 +539,9 @@
 
 	<distutils id="python3-gssapi" python3="1">
 		<branch repo="pypi.python.org"
-			module="/packages/18/02/c6e3d025f279c3ef15f382180010b67f1b141e72480e0d46a97191f3adbf/gssapi-1.8.1.tar.gz"
-			hash="sha256:893aa38ae769d1febe89963aa9f59194a966736ade2263fe14e0081126d64a72"
-			version="1.8.1">
+			module="/packages/27/71/5110b5af9354e5eb66a30dbaa6bac2a5e3013057120544830a849dbd087b/gssapi-1.8.2.tar.gz"
+			hash="sha256:b78e0a021cc91158660e4c5cc9263e07c719346c35a9c0f66725e914b235c89a"
+			version="1.8.2">
 		</branch>
 		<dependencies>
 			<dep package="python3-decorator"/>
