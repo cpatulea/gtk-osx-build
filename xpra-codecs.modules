@@ -151,9 +151,9 @@
 	</autotools>
 
 	<meson id="libspng">
-		<branch module="/randy408/libspng/archive/v0.7.2.tar.gz" repo="github.com"
-			checkoutdir="libspng-0.7.2" version="0.7.2"
-		hash="sha256:4acf25571d31f540d0b7ee004f5461d68158e0a13182505376805da99f4ccc4e"/>
+		<branch module="/randy408/libspng/archive/v0.7.3.tar.gz" repo="github.com"
+			checkoutdir="libspng-0.7.3" version="0.7.3"
+		hash="sha256:a50cadbe808ffda1a7fab17d145f52a23b163f34b3eb3696c7ecb5a52340fc1d"/>
 	</meson>
 
 	<autotools id="libwebp" autogenargs="" autogen-sh="configure" supports-non-srcdir-builds="no">
