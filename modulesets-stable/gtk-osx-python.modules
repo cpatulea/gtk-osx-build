@@ -88,38 +88,6 @@
     </after>
   </meson>
 
-  <!-- PyGObject 3.36 is the last version of PyGObject that supports
-       Python2. It's provided here for those laggards who haven't yet
-       migrated their projects to Python3. Don't expect it to stay
-       forever, migrate now! -->
-
-   <meson id="pygobject3-2" >
-    <branch version="3.36.1" module="pygobject/3.36/pygobject-3.36.1.tar.xz"
-	    hash="sha256:d1bf42802d1cec113b5adaa0e7bf7f3745b44521dc2163588d276d5cd61d718f"/>
-    <dependencies>
-      <dep package="pycairo"/>
-    </dependencies>
-    <after>
-      <dep package="python3"/>
-    </after>
-   </meson>
-
-  <!-- PyGObject 3.36 is the last version of PyGObject that supports
-       Python2. It's provided here for those laggards who haven't yet
-       migrated their projects to Python3. Don't expect it to stay
-       forever, migrate now! -->
-
-   <meson id="pygobject3-2" >
-    <branch version="3.36.1" module="pygobject/3.36/pygobject-3.36.1.tar.xz"
-	    hash="sha256:d1bf42802d1cec113b5adaa0e7bf7f3745b44521dc2163588d276d5cd61d718f"/>
-    <dependencies>
-      <dep package="pycairo"/>
-    </dependencies>
-    <after>
-      <dep package="python3"/>
-    </after>
-   </meson>
-
    <meson id="pygobject3" >
     <branch version="3.40.1" module="pygobject/3.40/pygobject-3.40.1.tar.xz"
 	    hash="sha256:00c6d591f4cb40c335ab1fd3e8c17869ba15cfda54416fe363290af766790035"/>
@@ -136,6 +104,7 @@
     <branch module="gtk-mac-integration/3.0/gtk-mac-integration-3.0.1.tar.xz"
             version="3.0.1"
             hash="sha256:f19e35bc4534963127bbe629b9b3ccb9677ef012fc7f8e97fd5e890873ceb22d">
+      <patch file="gtk-mac-integration-work-around-svg-locale-bug.patch" strip="1"/>
     </branch>
     <dependencies>
     </dependencies>
@@ -143,5 +112,14 @@
       <dep package="pygobject3"/>
     </after>
   </autotools>
+
+  <distutils id="pygments">
+    <branch repo="pymodules" version="2.9.0"
+            module="ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz">
+    </branch>
+    <dependencies>
+      <dep package="python3"/>
+    </dependencies>
+  </distutils>
 
 </moduleset>

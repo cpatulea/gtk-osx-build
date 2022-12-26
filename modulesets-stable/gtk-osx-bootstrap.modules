@@ -16,6 +16,8 @@
 	      href="http://icon-theme.freedesktop.org/releases/"/>
   <repository type="tarball" name="xmlsoft.org"
 	      href="ftp://xmlsoft.org/libxml2/"/>
+  <repository type="git" name="git.gnome.org"
+              href="https://gitlab.gnome.org/GNOME"/>
   <repository type="tarball" name="itstool" href="http://files.itstool.org/"/>
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
   <repository type="tarball" name="files.pythonhosted.org" href="https://files.pythonhosted.org"/>
@@ -57,14 +59,14 @@
        module won't link. In case you're wondering, itstool
        needs libxml2's python module. -->
 
-  <autotools id="libxml2" autogen-sh="configure"
+  <autotools id="libxml2" autogen-sh="autoreconf"
              autogenargs='--libdir="$JHBUILD_LIBDIR" --with-python'>
     <branch version="2.9.12" module="libxml2-2.9.12.tar.gz"
             repo="xmlsoft.org"
             hash="sha256:c8d6681e38c56f172892c85ddc0852e1fd4b53b4209e7f4ebf17f7e2eae71d92">
+      <patch file="libxml2-python-config.patch" strip="1"/>
     </branch>
     <after>
-      <dep package="python2"/>
       <dep package="python3"/>
     </after>
   </autotools>
@@ -89,19 +91,6 @@
     </dependencies>
   </autotools>
 
-  <distutils id="python3-pygments" python3="1">
-    <branch repo="files.pythonhosted.org"
-            module="/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz"
-            hash="sha256:a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"
-            version="2.9.0"/>
-    <dependencies>
-      <dep package="python3"/>
-    </dependencies>
-    <after>
-      <dep package="python3"/>
-    </after>
-  </distutils>
-
   <meson id="gtk-doc" mesonargs="-Dyelp_manual=false -Dtests=false">
     <branch version="1.33.2" module="gtk-doc/1.33/gtk-doc-1.33.2.tar.xz"
             hash="sha256:cc1b709a20eb030a278a1f9842a362e00402b7f834ae1df4c1998a723152bf43"/>
@@ -109,10 +98,10 @@
       <dep package="libxml2"/>
       <dep package="libxslt"/>
       <dep package="itstool"/>
-      <dep package="python3-pygments"/>
     </dependencies>
     <after>
       <dep package="python3"/>
+      <dep package="pygments"/>
     </after>
   </meson>
 
