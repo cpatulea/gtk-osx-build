@@ -29,9 +29,8 @@
   </autotools>
 
   <autotools id="libjpeg" autogen-sh="configure">
-    <branch module="jpegsrc.v9d.tar.gz" version="9d"
-            repo="jpeg" checkoutdir="jpeg-9d"
-            hash="sha256:6c434a3be59f8f62425b2e3c077e785c9ce30ee5874ea1c270e843f273ba71ee">
+    <branch module="jpegsrc.v9e.tar.gz" version="9e"
+            repo="jpeg" checkoutdir="jpeg-9e">
     </branch>
   </autotools>
 
@@ -52,14 +51,14 @@
        module won't link. In case you're wondering, itstool
        needs libxml2's python module. -->
 
-  <autotools id="libxml2" autogen-sh="configure"
+  <autotools id="libxml2" autogen-sh="autoreconf"
              autogenargs='--libdir="$JHBUILD_LIBDIR" --with-python'>
     <branch version="2.9.12" module="libxml2-2.9.12.tar.gz"
             repo="xmlsoft.org"
             hash="sha256:c8d6681e38c56f172892c85ddc0852e1fd4b53b4209e7f4ebf17f7e2eae71d92">
+      <patch file="libxml2-python-config.patch" strip="1"/>
     </branch>
     <after>
-      <dep package="python2"/>
       <dep package="python3"/>
     </after>
   </autotools>
@@ -93,6 +92,7 @@
     </dependencies>
     <after>
       <dep package="python3"/>
+      <dep package="pygments"/>
     </after>
   </meson>
 

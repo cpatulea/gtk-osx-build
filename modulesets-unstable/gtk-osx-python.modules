@@ -6,11 +6,11 @@
   <repository type="git" name="git.gnome.org" default="yes"
               href="https://gitlab.gnome.org/GNOME"/>
   <repository type="git" name="github"
-              href="git://github.com"/>
+              href="https://github.com"/>
   <repository type="tarball" name="python"
               href="https://www.python.org/ftp/python/"/>
   <repository type="tarball" name="pymodules"
-	      href="http://pypi.python.org/packages/"/>
+	      href="https://pypi.python.org/packages/"/>
 
   <metamodule id="meta-gtk-osx-python3-gtk3">
     <dependencies>
@@ -22,8 +22,8 @@
   </metamodule>
 
   <autotools id="python3" autogenargs="--enable-shared" autogen-sh="autoreconf">
-    <branch repo="python" module="3.9.2/Python-3.9.2.tar.xz" version="3.9.2"
-            hash="sha256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d"/>
+    <branch repo="python" module="3.10.2/Python-3.10.2.tar.xz" version="3.10.2"
+            hash="sha256:17de3ac7da9f2519aa9d64378c603a73a0e9ad58dffa8812e45160c086de64c7"/>
     <dependencies>
       <dep package='readline'/>
       <dep package="openssl" /> <!-- For hashlib -->
@@ -34,13 +34,9 @@
     <branch module="pygobject/pycairo" repo="github" />
     <dependencies>
       <dep package="cairo"/>
-    </dependencies>
-    <after>
       <dep package="python3"/>
-      <dep package="python"/>
-      <dep package="meta-gtk-osx-gtk2"/>
       <dep package="meta-gtk-osx-gtk3"/>
-    </after>
+    </dependencies>
  </meson>
 
   <meson id="pygobject3" >
@@ -60,5 +56,14 @@
       <dep package="pygobject3"/>
     </dependencies>
   </autotools>
+
+  <distutils id="pygments">
+    <branch repo="pymodules" version="2.9.0"
+            module="ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz">
+    </branch>
+    <dependencies>
+      <dep package="python3"/>
+    </dependencies>
+  </distutils>
 
 </moduleset>

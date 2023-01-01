@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
 <moduleset>
   <repository name="download.gnome.org" type="tarball" default="yes"
-              href="http://ftp.gnome.org/pub/GNOME/sources/"/>
+              href="https:////download.gnome.org/sources/"/>
   <repository name="openssl" type="tarball"
               href="https://www.openssl.org/source/"/>
   <repository name="ftp.gnu.org" type="tarball"
@@ -19,8 +19,6 @@
   <repository name="libuv.org" type="tarball"
               href="https://dist.libuv.org/dist/"/>
   <repository type="tarball" name="zlib" href="https://www.zlib.net/"/>
-
-
 
   <!-- Builds latest stable version of WebKitGTK for GTK 3.x -->
   <metamodule id="meta-gtk-osx-webkit-gtk3">
@@ -184,9 +182,9 @@
   </meson>
 
   <autotools id="libpsl" autogen-sh='configure'>
-    <branch repo="github-tarball" version="0.21.1"
-            module="rockdaboot/libpsl/releases/download/0.21.1/libpsl-0.21.1.tar.gz"
-            hash="sha256:ac6ce1e1fbd4d0254c4ddb9d37f1fa99dec83619c1253328155206b896210d4c"/>
+    <branch repo="github-tarball" version="0.21.2"
+            module="rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz"
+            hash="sha256:e35991b6e17001afa2c0ca3b10c357650602b92596209b7492802f3768a6285f"/>
   </autotools>
 
   <meson id="libsoup" mesonargs="-Dvapi=disabled">

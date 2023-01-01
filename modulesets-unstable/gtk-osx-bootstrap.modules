@@ -20,8 +20,8 @@
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
 
   <autotools id="libpng" autogenargs="--enable-shared" autogen-sh="configure">
-    <branch version="1.6.37" module="libpng/libpng-1.6.37.tar.xz"
-            hash="sha256:505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca"
+    <branch version="1.6.38" module="libpng/libpng-1.6.38.tar.xz"
+            hash="sha256:b3683e8b8111ebf6f1ac004ebb6b0c975cd310ec469d98364388e9cedbfa68be"
             repo="sourceforge"/>
     <dependencies>
       <dep package="zlib"/>
@@ -29,9 +29,8 @@
   </autotools>
 
   <autotools id="libjpeg" autogen-sh="configure">
-    <branch module="jpegsrc.v9d.tar.gz" version="9d"
-            repo="jpeg" checkoutdir="jpeg-9d"
-            hash="sha256:6c434a3be59f8f62425b2e3c077e785c9ce30ee5874ea1c270e843f273ba71ee">
+    <branch module="jpegsrc.v9e.tar.gz" version="9e"
+            repo="jpeg" checkoutdir="jpeg-9e">
     </branch>
   </autotools>
 
@@ -87,6 +86,7 @@
     </dependencies>
     <after>
       <dep package="python3"/>
+      <dep package="pygments"/>
     </after>
   </meson>
 

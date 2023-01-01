@@ -4,7 +4,7 @@
 <moduleset>
 
   <repository type="tarball" name="download.gnome.org" default="yes"
-              href="http://download.gnome.org/sources/"/>
+              href="https://download.gnome.org/sources/"/>
   <repository type="tarball" name="ftp.gnu.org" href="https://ftp.gnu.org/gnu/"/>
   <repository type="tarball" name="sourceforge"
               href="http://downloads.sourceforge.net/sourceforge/"/>
@@ -20,7 +20,6 @@
               href="https://gitlab.gnome.org/GNOME"/>
   <repository type="tarball" name="itstool" href="http://files.itstool.org/"/>
   <repository type="tarball" name="github-tarball" href="https://github.com/"/>
-  <repository type="tarball" name="files.pythonhosted.org" href="https://files.pythonhosted.org"/>
 
   <autotools id="libpng" autogenargs="--enable-shared" autogen-sh="configure">
     <branch version="1.6.38" module="libpng/libpng-1.6.38.tar.xz"

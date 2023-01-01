@@ -4,9 +4,9 @@
 <moduleset>
   <repository type="git" name="git.gnome.org" default="yes"
               href="https://gitlab.gnome.org/GNOME"/>
-  <repository type="git" name="github" href="git://github.com/"/>
-  <repository type="tarball" name="download.gnome.org"
-              href="https://download.gnome.org/sources/"/>
+  <repository type="git" name="github" href="https://github.com/"/>
+  <repository type="tarball" name="ftp.gnome.org"
+              href="http://download.gnome.org/sources/"/>
   <repository type="tarball" name="ftp.gnu.org" href="https://ftp.gnu.org/gnu/"/>
   <repository type="tarball" name="shared-mime-info"
               href="https://gitlab.freedesktop.org/xdg/shared-mime-info/uploads/"/>
@@ -18,8 +18,8 @@
               href="https://gitlab.com/graphviz/graphviz/-/archive/"/>
 
   <repository type="tarball" name="sqlite" href="http://www.sqlite.org/"/>
-  <repository type="tarball" name="frodo"
-              href="http://frodo.looijaard.name/system/files/software/"/>
+  <repository type="tarball" name="fossies"
+              href="https://fossies.org/linux/misc/"/>
   <repository type="tarball" name="paguire" href="https://releases.pagure.org/"/>
   <repository type="tarball" name="pcre" href="https://ftp.pcre.org/pub/"/>
 
@@ -36,17 +36,14 @@
   </cmake>
 
   <autotools id="vala" autogen-sh="configure">
-    <branch repo="download.gnome.org" version="0.52.0"
+    <branch repo="ftp.gnome.org" version="0.52.0"
             module="vala/0.52/vala-0.52.0.tar.xz"
             hash="sha256:1de26310db465aca525679d3b5a3c1d8db2e067c4cbc0e5ddd015cd938bac68b"/>
     <dependencies>
       <dep package="graphviz"/>
-    </dependencies>
-    <after>
       <dep package="meta-gtk-osx-bootstrap"/>
       <dep package="meta-gtk-osx-gtk3"/>
-      <dep package="meta-gtk-osx-gtk2"/>
-    </after>
+    </dependencies>
   </autotools>
 
 <!-- Vala is written in vala, so you need vala to build it. If you
@@ -97,7 +94,7 @@
     </dependencies>
   </meson>
 
-  <meson id="gtksourceview3">
+  <meson id="gtksourceview3" mesonargs="-Dvapi=false">
     <branch revision="gtksourceview-4-8" />
     <dependencies>
       <dep package="gtk+-3.0"/>
@@ -118,7 +115,37 @@
     </dependencies>
   </meson>
 
-<!-- shared-mime-info goes here after we figure out what to do with it. -->
+<autotools id="getopt" autogen-sh="configure"
+             supports-non-srcdir-builds="no">
+    <branch repo="fossies" version="1.1.6" module="getopt-1.1.6.tar.gz"
+            hash="sha256:d0bf1dc642a993e7388a1cddfb9409bed375c21d5278056ccca3a0acd09dc5fe">
+       <patch file="getopt-autotools.patch" strip="1"/>
+    </branch>
+  </autotools>
+
+  <autotools id="xmlto" autogen-sh="autoreconf">
+    <branch module="xmlto/xmlto-0.0.28.tar.bz2"
+            version="0.0.28" repo="paguire"
+            hash="sha256:1130df3a7957eb9f6f0d29e4aa1c75732a7dfb6d639be013859b5c7ec5421276">
+      <patch file="xmlto-allow-net-access.patch" strip="1"/>
+    </branch>
+    <dependencies>
+      <dep package="getopt"/>
+    </dependencies>
+  </autotools>
+
+  <meson id="shared-mime-info" supports-non-srcdir-builds="no" >
+    <branch module="0ee50652091363ab0d17e335e5e74fbe/shared-mime-info-2.1.tar.xz"
+            repo="shared-mime-info" version="2.1"
+            hash="sha256:b2d40cfcdd84e835d0f2c9107b3f3e77e9cf912f858171fe779946da634e8563">
+      <patch file="shared-mime-info-2.1-freedesktop-generate.patch" strip="1"/>
+    </branch>
+    <dependencies>
+      <dep package="glib"/>
+      <dep package="xmlto"/>
+    </dependencies>
+  </meson>
+
   <meson id="gsettings-desktop-schemas">
     <branch/>
     <dependencies>
@@ -130,9 +157,9 @@
   <autotools id="sqlite" autogenargs="--disable-tcl --enable-threadsafe" >
     <!-- Another package with a non-standard repository structure. Tarballs
     are easier.-->
-    <branch module="2021/sqlite-autoconf-3350400.tar.gz" version='3.35.4'
+    <branch module="2022/sqlite-autoconf-3390400.tar.gz" version='3.39.4'
             repo="sqlite"
-            hash="sha256:7771525dff0185bfe9638ccce23faa0e1451757ddbda5a6c853bb80b923a512d"/>
+            hash="sha3:431328e30d12c551da9ba7ef2122b269076058512014afa799caaf62ca567090"/>
   </autotools>
 
   <autotools id="goocanvas2">
@@ -180,6 +207,13 @@
 
   <autotools id="libgsf" autogenargs="--without-python">
     <branch/>
+  </autotools>
+
+  <autotools id='readline' autogen-sh="configure">
+    <branch repo="ftp.gnu.org" module="readline/readline-8.1.tar.gz"
+            version="8.1"
+            hash="sha256:f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02">
+    </branch>
   </autotools>
 
   <!-- gmp uses Mercurial, so we stick with the tarball to avoid

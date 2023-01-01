@@ -4,14 +4,15 @@
 <moduleset>
   <repository type="git" name="git.gnome.org" default="yes"
               href="https://gitlab.gnome.org/GNOME"/>
-  <repository type="git" name="github" href="git://github.com/"/>
+  <repository type="git" name="github" href="https://github.com/"/>
   <repository type="git" name="freedesktop"
               href="https://gitlab.freedesktop.org/"/>
   <repository type="git" name="nongnu"
-	      href="git://git.sv.nongnu.org/"/>
-  <repository type="tarball" name="pcre" href="https://ftp.pcre.org/pub/"/>
+	      href="https://git.savannah.nongnu.org/git/"/>
   <repository type="tarball" name="hicolor"
               href="https://icon-theme.freedesktop.org/releases/"/>
+  <repository type="tarball" name="sourceforge"
+              href="http://downloads.sourceforge.net/sourceforge/"/>
   <repository type="system" name="system"/>
 
   <!-- This module set works a bit differently than for example the
@@ -58,21 +59,21 @@
     </after>
   </metamodule>
 
-  <autotools id="libffi" autogenargs="--disable-builddir"
-             autogen-sh="autoreconf" supports-non-srcdir-builds="no">
+  <autotools id="libffi" autogenargs="--disable-multi-os-directory"
+             autogen-sh="autoreconf" >
     <branch module="atgreen/libffi" repo="github"/>
   </autotools>
 
-   <autotools id="libpcre" autogen-sh="configure">
-    <branch repo="pcre" version="8.45"
-            module="pcre/pcre-8.45.tar.bz2"
-            hash="sha256:4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8"/>
+  <autotools id="libpcre2" autogen-sh="autoreconf"
+             autogenargs="--enable-pcre2-16 --enable-pcre2-32 --enable-jit">
+    <branch repo="github"
+            module="PCRE2Project/pcre2"/>
   </autotools>
 
   <meson id="glib" mesonargs="-Dlibmount=disabled">
-    <branch/>
+    <branch revision='main'/>
     <dependencies>
-      <dep package="libpcre"/>
+      <dep package="libpcre2"/>
       <dep package="libffi"/>
     </dependencies>
   </meson>
@@ -88,16 +89,13 @@
     </dependencies>
   </cmake>
 
-  <meson id="harfbuzz-no-cairo" mesonargs="-Dcoretext=enabled -Ddocs=disabled -Dbenchmark=disabled">
-    <branch repo="github" module="harfbuzz/harfbuzz"/>
+  <meson id="harfbuzz-no-cairo" mesonargs="-Dcoretext=enabled -Dfreetype=enabled -Ddocs=disabled -Dbenchmark=disabled -Dtests=disabled">
+    <branch revision="main" repo="github" module="harfbuzz/harfbuzz"/>
     <dependencies>
       <dep package="glib"/>
       <dep package="freetype-no-harfbuzz"/>
-    </dependencies>
-    <after>
       <dep package="icu"/>
-      <dep package="icu55"/>
-    </after>
+    </dependencies>
   </meson>
 
   <cmake id="freetype" cmakeargs="-DCMAKE_DISABLE_FIND_PACKAGE_BZip2=TRUE -D BUILD_SHARED_LIBS=TRUE -D CMAKE_BUILD_TYPE=Release">
@@ -110,13 +108,13 @@
 
   <autotools id="fontconfig"
              autogenargs="--disable-docs --with-default-fonts=/System/Library/Fonts --with-add-fonts=/Library/Fonts --with-cache-dir=home">
-    <branch repo="freedesktop" module="fontconfig/fontconfig"/>
+    <branch revision="main" repo="freedesktop" module="fontconfig/fontconfig"/>
     <dependencies>
       <dep package="freetype"/>
     </dependencies>
   </autotools>
 
-  <autotools id="pixman" autogenargs="--disable-gtk --disable-mmx">
+  <autotools id="pixman" autogenargs="--disable-gtk --disable-mmx --disable-arm-a64-neon">
     <branch repo="freedesktop" module="pixman/pixman" />
     <after>
       <dep package="meta-gtk-osx-bootstrap"/>
@@ -126,8 +124,7 @@
   <!-- cairo doesn't really need fontconfig, but if Pango finds
        freetype it insists that it has to have fontconfig too and that
        they are both built into cairo. -->
-  <autotools id="cairo"
-             autogenargs="--enable-pdf --enable-quartz --disable-xlib --without-x">
+  <meson id="cairo">
     <branch repo="freedesktop" module="cairo/cairo" />
     <dependencies>
       <dep package="pixman"/>
@@ -136,7 +133,7 @@
     </dependencies>
     <after>
     </after>
-  </autotools>
+  </meson>
 
   <meson id="gobject-introspection">
     <branch/>
@@ -152,8 +149,8 @@
   <!-- This harfbuzz doesn't really need cairo, but if Pango is going
        to use introspection it requires harfbuzz to have
        introspection, and gobject-introspection needs cairo. -->
-  <meson id="harfbuzz" mesonargs="-Dcoretext=enabled -Ddocs=disabled -Dbenchmark=disabled">
-    <branch repo="github" module="harfbuzz/harfbuzz"/>
+  <meson id="harfbuzz" mesonargs="-Dcoretext=enabled -Dfreetype=enabled -Ddocs=disabled -Dbenchmark=disabled -Dtests=disabled">
+    <branch revision="main" repo="github" module="harfbuzz/harfbuzz"/>
     <dependencies>
       <dep package="gobject-introspection"/>
       <dep package="cairo"/>
@@ -254,13 +251,13 @@
     <branch repo="github" revision="3.6.4" module="sass/libsass"/>
   </autotools>
 
-  <meson id="gtk+-4.0"
-             mesonargs="-Dquartz-backend=true -Dx11-backend=false -Dmedia=none">
+  <meson id="gtk-4" mesonargs="-Dx11-backend=false -Dmedia-gstreamer=disabled">
     <branch module="gtk" checkoutdir="gtk-4.0"/>
     <dependencies>
       <dep package="glib"/>
       <dep package="pango"/>
       <dep package="atk"/>
+      <dep package="gdk-pixbuf"/>
       <dep package="graphene"/>
       <dep package="libsass"/>
       <dep package="libepoxy"/>

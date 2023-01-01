@@ -5,9 +5,9 @@
   <repository type="git" name="git.gnome.org" default="yes"
               href="https://gitlab.gnome.org/GNOME"/>
   <repository type="git" name="cairographics"
-              href="git://gitlab.freedesktop.org/cairo/"/>
+              href="https://gitlab.freedesktop.org/cairo/"/>
   <repository type="git" name="github"
-              href="git://github.com"/>
+              href="https://github.com"/>
 
 <!-- mm-common is C++ glue code needed only to build from git. -->
   <meson id="mm-common">
@@ -18,7 +18,7 @@
        Note that C++17 is supported only on macOS-10.13 and later.
   -->
   <meson id="cairomm3" >
-    <branch module="cairomm"  revision="cairomm-1-14"
+    <branch module="cairomm" revision="cairomm-1-14"
             repo="cairographics" />
     <dependencies>
       <dep package="cairo"/>
