@@ -89,7 +89,7 @@
 		</after>
 	</distutils>
 
-	<distutils id="python3-pycparser" python3="1">
+	<distutils id="python3-cparser" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/5e/0b/95d387f5f4433cb0f53ff7ad859bd2c6051051cebbb564f139a999ab46de/pycparser-2.21.tar.gz"
 			hash="sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
@@ -415,7 +415,7 @@
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-cryptography"/>
-			<dep package="python3-pycparser"/>
+			<dep package="python3-cparser"/>
 			<dep package="python3-pyopenssl"/>
 			<dep package="python3-pylsqpack"/>
 			<dep package="python3-certifi"/>
