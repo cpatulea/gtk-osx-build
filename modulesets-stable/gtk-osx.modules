@@ -260,7 +260,6 @@
             hash="sha256:27a6ef157743350c807ffea59baa1d70226dbede82a5e953ffd58ea6059fe691">
       <patch file="gtk-3-24-36-image-recolor-load-crash.patch" strip="1"/>
       <patch file="gtk-3-24-36-call-gdk-quartz-osx-version.patch" strip="1"/>
-      <patch file="gtk-3-24-36-quartz-path.patch" strip="1"/>
     </branch>
     <dependencies>
       <dep package="glib"/>
