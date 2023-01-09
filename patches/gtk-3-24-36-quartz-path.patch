@@ -1,0 +1,11 @@
+--- a/gdk/quartz/gdkquartz-cocoa-access.h	2023-01-09 15:29:40.000000000 +0700
++++ b/gdk/quartz/gdkquartz-cocoa-access.h	2023-01-09 15:29:58.000000000 +0700
+@@ -25,7 +25,7 @@
+ 
+ #include <AppKit/AppKit.h>
+ #include <gdk/gdk.h>
+-#include "gdkquartz.h"
++#include "gdk/gdkquartz.h"
+ 
+ GDK_AVAILABLE_IN_ALL
+ NSEvent  *gdk_quartz_event_get_nsevent              (GdkEvent  *event);
