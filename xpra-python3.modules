@@ -11,6 +11,10 @@
 	<repository type="tarball" name="github-tarball" default="yes" href="https://github.com/"/>
 	<repository type="tarball" name="pyyaml.org" href="http://pyyaml.org"/>
 
+	<!--
+	Don't update past this version as this breaks py2app:
+	https://github.com/Xpra-org/gtk-osx-build/commit/4cac9061b3f40de773a60456f6318c46c60d5b56
+	-->
 	<distutils id="python3-setuptools" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/ae/0b/e458b0d07dced3d7fa2d21d828e708f374ef82040f2012c05d35f47f9af3/setuptools-60.8.2.tar.gz"
