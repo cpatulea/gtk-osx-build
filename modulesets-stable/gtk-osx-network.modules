@@ -33,8 +33,8 @@
   <autotools id="openssl" autogen-sh="Configure" autogenargs="shared "
              autogen-template="%(srcdir)s/%(autogen-sh)s --prefix=%(prefix)s --openssldir=%(prefix)s/etc/ssl %(autogenargs)s"
              makeinstallargs="install_sw" supports-non-srcdir-builds="no">
-    <branch module="openssl-3.0.7.tar.gz" version="3.0.7" repo="openssl"
-            hash="sha256:83049d042a260e696f62406ac5c08bf706fd84383f945cf21bd61e9ed95c396e"/>
+    <branch module="openssl-3.0.8.tar.gz" version="3.0.8" repo="openssl"
+            hash="sha256:6c13d2bf38fdf31eac3ce2a347073673f5d63263398f1f69d0df4a41253e4b3e"/>
   </autotools>
 
   <!-- Rudely demands TeX to build documentation -->
