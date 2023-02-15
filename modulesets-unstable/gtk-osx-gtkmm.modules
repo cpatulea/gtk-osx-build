@@ -18,7 +18,7 @@
        Note that C++17 is supported only on macOS-10.13 and later.
   -->
   <meson id="cairomm3" >
-    <branch module="cairomm" revision="cairomm-1-14"
+    <branch module="cairomm"  revision="cairomm-1-14"
             repo="cairographics" />
     <dependencies>
       <dep package="cairo"/>
