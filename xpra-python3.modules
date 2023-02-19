@@ -32,9 +32,9 @@
 
 	<distutils id="python3-coverage" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/80/f4/e7d2c659aca9db9edd2f58a604a79756e332c8b20659ed6d8b116c21baad/coverage-6.2.tar.gz"
-			hash="sha256:e2cad8093172b7d1595b4ad66f24270808658e11acf43a8f95b41276162eb5b8"
-			version="6.2"/>
+			module="/packages/18/a0/bfa6c6ab7a5f0aeb69dd169d956ead54133f5bca68a5945c4569ea2c40b3/coverage-7.1.0.tar.gz"
+			hash="sha256:10188fe543560ec4874f974b5305cd1a8bdcfa885ee00ea3a03733464c4ca265"
+			version="7.1.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
