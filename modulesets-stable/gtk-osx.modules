@@ -71,6 +71,7 @@
   <include href="gtk-osx-network.modules" />
   <include href="gtk-osx-python.modules" />
   <include href="gtk-osx-random.modules" />
+  <include href="gtk-osx-themes.modules" />
   <!--
     Dummy meson module to shut up a jhbuild warning.
   -->
