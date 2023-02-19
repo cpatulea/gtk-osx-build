@@ -83,10 +83,9 @@
   <autotools id="libxml2"
              autogen-sh="autoreconf"
              autogenargs='--libdir="$JHBUILD_LIBDIR" --with-python'>
-    <branch module="libxml2-2.10.3.tar.gz"
+    <branch module="libxml2/2.10/libxml2-2.10.3.tar.xz"
             version="2.10.3"
-            hash="sha256:3f9fb74bb02049f3454892c88d3e57a23e30a88a7d444a80064625af2f543898"
-            repo="xmlsoft.org">
+            hash="sha256:5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c">
       <patch file="libxml2-python-config.patch"
              strip="1" />
     </branch>
@@ -97,10 +96,9 @@
   <!---->
   <autotools id="libxslt"
              autogen-sh="configure">
-    <branch module="libxslt-1.1.37.tar.gz"
+    <branch module="libxslt/1.1/libxslt-1.1.37.tar.gz"
             version="1.1.37"
-            hash="sha256:3a4b27dc8027ccd6146725950336f1ec520928f320f144eb5fa7990ae6123ab4"
-            repo="xmlsoft.org" />
+            hash="sha256:3a4b27dc8027ccd6146725950336f1ec520928f320f144eb5fa7990ae6123ab4" />
     <dependencies>
       <dep package="libxml2" />
     </dependencies>
