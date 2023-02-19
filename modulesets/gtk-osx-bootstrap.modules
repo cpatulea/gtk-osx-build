@@ -55,9 +55,9 @@
 
   <autotools id="libxml2" autogen-sh="autoreconf"
              autogenargs='--libdir="$JHBUILD_LIBDIR" --with-python'>
-    <branch version="2.9.12" module="libxml2-2.9.12.tar.gz"
+    <branch version="2.10.3" module="libxml2-2.10.3.tar.gz"
             repo="xmlsoft.org"
-            hash="sha256:c8d6681e38c56f172892c85ddc0852e1fd4b53b4209e7f4ebf17f7e2eae71d92">
+            hash="sha256:3f9fb74bb02049f3454892c88d3e57a23e30a88a7d444a80064625af2f543898">
       <patch file="libxml2-python-config.patch" strip="1"/>
     </branch>
     <after>
