@@ -26,9 +26,6 @@
   <repository name="icon-theme"
               href="http://icon-theme.freedesktop.org/releases/"
               type="tarball" />
-  <repository name="xmlsoft.org"
-              href="ftp://xmlsoft.org/libxml2/"
-              type="tarball" />
   <repository name="git.gnome.org"
               href="https://gitlab.gnome.org/GNOME"
               type="git" />
