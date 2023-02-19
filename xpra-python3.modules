@@ -190,9 +190,9 @@
 
 	<distutils id="python3-semantic-version" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/d4/52/3be868c7ed1f408cb822bc92ce17ffe4e97d11c42caafce0589f05844dd0/semantic_version-2.8.5.tar.gz"
-			hash="sha256:d2cb2de0558762934679b9a104e82eca7af448c9f4974d1f3eeccff651df8a54"
-			version="2.8.5"/>
+			module="/packages/7d/31/f2289ce78b9b473d582568c234e104d2a342fd658cc288a7553d83bb8595/semantic_version-2.10.0.tar.gz"
+			hash="sha256:bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c"
+			version="2.10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-toml"/>
