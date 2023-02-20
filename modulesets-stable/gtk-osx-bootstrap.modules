@@ -48,13 +48,11 @@
     </dependencies>
   </autotools>
   <!---->
-  <autotools id="libjpeg"
-             autogen-sh="configure">
-    <branch module="jpegsrc.v9e.tar.gz"
-            version="9e"
-            checkoutdir="jpeg-9e"
-            repo="jpeg" />
-  </autotools>
+  <cmake id="libjpeg">
+    <branch module="/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.5.1.tar.gz" version="2.1.5.1"
+            hash="sha256:2fdc3feb6e9deb17adec9bafa3321419aa19f8f4e5dea7bf8486844ca22207bf"
+            repo="github-tarball" />
+  </cmake>
   <!---->
   <autotools id="libtiff"
              autogen-sh="configure"
