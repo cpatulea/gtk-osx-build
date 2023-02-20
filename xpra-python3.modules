@@ -136,32 +136,6 @@
 		</after>
 	</distutils>
 
-	<distutils id="python3-parsing" python3="1">
-		<branch repo="pypi.python.org"
-			module="/packages/71/22/207523d16464c40a0310d2d4d8926daffa00ac1f5b1576170a32db749636/pyparsing-3.0.9.tar.gz"
-			hash="sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"
-			version="3.0.9"/>
-		<dependencies>
-			<dep package="python3"/>
-		</dependencies>
-		<after>
-			<dep package="python3"/>
-		</after>
-	</distutils>
-
-	<distutils id="python3-packaging" python3="1">
-		<branch repo="pypi.python.org"
-			module="/packages/47/d5/aca8ff6f49aa5565df1c826e7bf5e85a6df852ee063600c1efa5b932968c/packaging-23.0.tar.gz"
-			hash="sha256:b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97"
-			version="23.0"/>
-		<dependencies>
-			<dep package="python3"/>
-		</dependencies>
-		<after>
-			<dep package="python3"/>
-		</after>
-	</distutils>
-
 	<distutils id="python3-asn1crypto" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/de/cf/d547feed25b5244fcb9392e288ff9fdc3280b10260362fc45d37a798a6ee/asn1crypto-1.5.1.tar.gz"
@@ -202,19 +176,6 @@
 		</after>
 	</distutils>
 
-	<distutils id="python3-typing-extensions" python3="1">
-		<branch repo="files.pythonhosted.org"
-			module="/packages/e3/a7/8f4e456ef0adac43f452efc2d0e4b242ab831297f1bac60ac815d37eb9cf/typing_extensions-4.4.0.tar.gz"
-			hash="sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"
-			version="4.4.0"/>
-		<dependencies>
-			<dep package="python3"/>
-		</dependencies>
-		<after>
-			<dep package="python3"/>
-		</after>
-	</distutils>
-
 	<!-- We can't update past this version because this requires a newer version of setuptools,
 		and setuptools breaks py2app... -->
 	<distutils id="python3-setuptools_rust" python3="1">
@@ -244,8 +205,6 @@
 			<dep package="python3-cffi"/>
 			<dep package="python3-six"/>
 			<dep package="python3-asn1crypto"/>
-			<dep package="python3-parsing"/>
-			<dep package="python3-packaging"/>
 			<dep package="python3-setuptools_rust"/>
 		</dependencies>
 		<after>
