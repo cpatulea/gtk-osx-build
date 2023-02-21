@@ -122,6 +122,7 @@
       <dep package="libxml2" />
       <dep package="libxslt" />
       <dep package="itstool" />
+      <dep package="pygments" />
     </dependencies>
     <after>
       <dep package="python3" />
