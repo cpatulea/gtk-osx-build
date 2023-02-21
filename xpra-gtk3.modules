@@ -23,6 +23,7 @@
 			<dep package="meta-osx-xpra-tools-deps"/>
 			<dep package="meta-osx-xpra-python3-deps"/>
 			<dep package="meta-osx-xpra-codec-deps"/>
+			<dep package="meta-gstreamer"/>
 			<dep package="meta-osx-xpra-pkgtools"/>
 		</dependencies>
 	</metamodule>
