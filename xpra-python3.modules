@@ -11,15 +11,11 @@
 	<repository type="tarball" name="github-tarball" default="yes" href="https://github.com/"/>
 	<repository type="tarball" name="pyyaml.org" href="http://pyyaml.org"/>
 
-	<!--
-	Don't update past this version as this breaks py2app:
-	https://github.com/Xpra-org/gtk-osx-build/commit/4cac9061b3f40de773a60456f6318c46c60d5b56
-	-->
 	<distutils id="python3-setuptools" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/ae/0b/e458b0d07dced3d7fa2d21d828e708f374ef82040f2012c05d35f47f9af3/setuptools-60.8.2.tar.gz"
-			hash="sha256:66b8598da112b8dc8cd941d54cf63ef91d3b50657b374457eda5851f3ff6a899"
-			version="60.8.2">
+			module="/packages/d6/6f/9d257b50d60f67d0b54b88fb39d4a9bade8406d4a926da3e4f05bf04f38b/setuptools-67.3.3.tar.gz"
+			hash="sha256:ed4e75fafe103c79b692f217158ba87edf38d31004b9dbc1913debb48793c828"
+			version="67.3.3">
 			<patch file="setuptools_make_manageable.patch" strip="1"/>
 		</branch>
 		<dependencies>
@@ -187,6 +183,9 @@
 			<dep package="python3"/>
 			<dep package="python3-semantic-version"/>
 			<dep package="python3-typing-extensions"/>
+			<dep package="python3-macholib"/>
+			<dep package="python3-modulegraph"/>
+			<dep package="python3-altgraph"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
