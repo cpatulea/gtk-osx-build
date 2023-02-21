@@ -15,7 +15,6 @@
 
 	<metamodule id="meta-osx-xpra-deps">
 		<dependencies>
-			<!-- we need some minimum python2 env - but what? -->
 			<dep package="meta-gtk-osx-bootstrap"/>
 			<dep package="meta-gtk-osx-gtk3"/>
 			<dep package="meta-gtk-osx-python3-gtk3"/>
