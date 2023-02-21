@@ -95,7 +95,7 @@
 	<autotools id="xar" autogen-sh="configure">
 		<branch module="/downloads/mackyle/xar/xar-1.6.1.tar.gz"
 			version="1.6.1"
-			hash="sha256:5e7d50dab73f5cb1713b49fa67c455c2a0dd2b0a7770cbc81b675e21f6210e25"
+			hash="sha256:ee46089968457cf710b8cf1bdeb98b7ef232eb8a4cdeb34502e1f16ef4d2153e"
 			repo="github.com"/>
 	</autotools>
 
