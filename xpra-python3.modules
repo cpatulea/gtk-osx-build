@@ -277,6 +277,7 @@
 			version="4.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
+			<dep package="python3-semantic-version"/>
 			<dep package="python3-setuptools_rust"/>
 		</dependencies>
 		<after>
