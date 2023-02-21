@@ -93,7 +93,7 @@
     </dependencies>
   </meson>
   <!---->
-  <meson id="gst-plugins-ugly">
+  <meson id="gst-plugins-ugly" mesonargs="-Dgpl=enabled">
     <branch module="gst-plugins-ugly/gst-plugins-ugly-1.22.0.tar.xz"
             version="1.22.0"
             hash="sha256:a644dc981afa2d8d3a913f763ab9523c0620ee4e65a7ec73c7721c29da3c5a0c" />
