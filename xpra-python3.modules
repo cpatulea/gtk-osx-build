@@ -186,6 +186,7 @@
 			<dep package="python3-macholib"/>
 			<dep package="python3-modulegraph"/>
 			<dep package="python3-altgraph"/>
+			<dep package="python3-setuptools"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
