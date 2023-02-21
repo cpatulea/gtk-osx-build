@@ -150,6 +150,12 @@
 		</after>
 	</autotools>
 
+	<meson id="openh264">
+		<branch module="/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz" repo="github.com"
+			checkoutdir="openh264-2.3.1" version="2.3.1"
+		hash="sha256:453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32"/>
+	</meson>
+
 	<meson id="libspng">
 		<branch module="/randy408/libspng/archive/v0.7.3.tar.gz" repo="github.com"
 			checkoutdir="libspng-0.7.3" version="0.7.3"
@@ -248,6 +254,7 @@
 			<dep package="libvpx"/>
 			<dep package="x264"/>
 			<dep package="libwebp"/>
+			<dep package="openh264"/>
 			<dep package="libspng"/>
 			<dep package="ffmpeg"/>
 			<dep package="libqrencode"/>
