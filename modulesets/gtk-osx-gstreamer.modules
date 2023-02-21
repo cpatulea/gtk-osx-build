@@ -97,7 +97,7 @@
       <dep package="gstreamer"/>
       <dep package="gst-plugins-base"/>
       <dep package="gst-plugins-good"/>
-      <!--dep package="gst-plugins-ugly"/-->
+      <dep package="gst-plugins-ugly"/>
       <dep package="gst-plugins-bad"/>
       <dep package="gst-ffmpeg"/>
     </dependencies>
