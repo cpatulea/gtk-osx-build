@@ -99,6 +99,7 @@
             repo="pymodules" />
     <dependencies>
       <dep package="python3" />
+      <dep package="python3-setuptools" />
     </dependencies>
   </distutils>
   <!---->
