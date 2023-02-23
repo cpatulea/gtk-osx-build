@@ -93,7 +93,7 @@
 		</branch>
 	</autotools>
 
-	<autotools id="xar" autogen-sh="configure">
+	<autotools id="xar" autogen-sh="cd xar;./autogen.sh" supports-non-srcdir-builds="no">
 		<branch repo="github" module="typeling1578/xar"/>
 	</autotools>
 
