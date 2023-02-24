@@ -259,7 +259,6 @@
 			<dep package="ffmpeg"/>
 			<dep package="libqrencode"/>
 			<dep package="lz4"/>
-			<dep package="meta-gstreamer"/>
 		</dependencies>
 	</metamodule>
 
