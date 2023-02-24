@@ -182,7 +182,6 @@
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-semantic-version"/>
-			<dep package="python3-typing-extensions"/>
 			<dep package="python3-macholib"/>
 			<dep package="python3-modulegraph"/>
 			<dep package="python3-altgraph"/>
