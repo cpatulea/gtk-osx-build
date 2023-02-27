@@ -249,6 +249,9 @@
 			version="0.28.5"/>
 		<dependencies>
 			<dep package="python3"/>
+			<dep package="python3-macholib"/>
+			<dep package="python3-modulegraph"/>
+			<dep package="python3-altgraph"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
@@ -831,9 +834,6 @@
 		  <dep package="python3-rencode"/>
 		  <dep package="python3-yaml"/>
 		  <dep package="python3-psutil"/>
-		  <dep package="python3-macholib"/>
-		  <dep package="python3-modulegraph"/>
-		  <dep package="python3-altgraph"/>
 		  <dep package="python3-pyopengl"/>
 		  <dep package="python3-pyopengl-accelerate"/>
 		  <dep package="python3-qrencode"/>
