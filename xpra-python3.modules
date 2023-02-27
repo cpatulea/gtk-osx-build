@@ -172,8 +172,6 @@
 		</after>
 	</distutils>
 
-	<!-- We can't update past this version because this requires a newer version of setuptools,
-		and setuptools breaks py2app... -->
 	<distutils id="python3-setuptools_rust" python3="1">
 		<branch repo="files.pythonhosted.org"
 			module="/packages/a9/55/5db4a5b137af2afdc23a6e251d5ebb3b4e04c8deb68fbb5ffdacbd134c0c/setuptools-rust-1.3.0.tar.gz"
