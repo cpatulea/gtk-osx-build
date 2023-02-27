@@ -630,7 +630,9 @@
 		<branch repo="files.pythonhosted.org"
 			module="/packages/d2/75/0e01d51f4b4cc5c1bf2509fe622f5d3eac09626bc5ebe3c7ad34fe5cfdff/pyobjc-framework-Cocoa-8.2.tar.gz"
 			hash="sha256:f0901998e2f18415ef6d1f8a12b083f69fc93bd56b3e88040002e3c09bd8c304"
-			version="8.2"/>
+			version="8.2">
+			<patch file="pyobjc-framework-cocoa-unused-parameter.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -646,6 +648,7 @@
 			version="8.2"/>
 		<dependencies>
 			<dep package="python3"/>
+			<patch file="pyobjc-framework-quartz-unused-parameter.patch" strip="1"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
