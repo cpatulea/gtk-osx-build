@@ -9,7 +9,7 @@
  
  GDK_AVAILABLE_IN_ALL
  NSEvent  *gdk_quartz_event_get_nsevent              (GdkEvent  *event);
---- a/none	1970-01-01 07:00:00.000000000 +0700
+--- a/gdk/gdkquartz.h	1970-01-01 07:00:00.000000000 +0700
 +++ b/gdk/gdkquartz.h	2022-12-22 21:01:18.000000000 +0700
 @@ -0,0 +1,72 @@
 +
