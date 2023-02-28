@@ -631,8 +631,6 @@
 			module="/packages/b5/35/da77d26b9b6ee97fede0a9364273aaa7970fea7947d15c0e28efd345db0e/pyobjc-framework-Cocoa-9.0.1.tar.gz"
 			hash="sha256:a8b53b3426f94307a58e2f8214dc1094c19afa9dcb96f21be12f937d968b2df3"
 			version="9.0.1"/>
-			<patch file="pyobjc-framework-cocoa-unused-parameter.patch" strip="1"/>
-		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
