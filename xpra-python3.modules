@@ -613,9 +613,9 @@
 
 	<distutils id="python3-pyobjc-core" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/59/b0/abf64f846a4c3c115b546b4fa68b734bb750eed87fd5af6f73a5489eecd6/pyobjc-core-8.2.tar.gz"
-			hash="sha256:6afb8ee1dd0647cbfaaf99906eca3b43ce045b27e3d4510462d04e7e5361c89b"
-			version="8.2">
+			module="/packages/1e/20/75b43cd85d8676d15f7d3876e8b64415bfd7b7f937710f9966738723daf3/pyobjc-core-9.0.1.tar.gz"
+			hash="sha256:5ce1510bb0bdff527c597079a42b2e13a19b7592e76850be7960a2775b59c929"
+			version="9.0.1">
 			<patch file="pyobjc-unused-parameter.patch" strip="1"/>
 		</branch>
 		<dependencies>
@@ -628,9 +628,9 @@
 
 	<distutils id="python3-pyobjc-framework-cocoa" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/d2/75/0e01d51f4b4cc5c1bf2509fe622f5d3eac09626bc5ebe3c7ad34fe5cfdff/pyobjc-framework-Cocoa-8.2.tar.gz"
-			hash="sha256:f0901998e2f18415ef6d1f8a12b083f69fc93bd56b3e88040002e3c09bd8c304"
-			version="8.2">
+			module="/packages/b5/35/da77d26b9b6ee97fede0a9364273aaa7970fea7947d15c0e28efd345db0e/pyobjc-framework-Cocoa-9.0.1.tar.gz"
+			hash="sha256:a8b53b3426f94307a58e2f8214dc1094c19afa9dcb96f21be12f937d968b2df3"
+			version="9.0.1"/>
 			<patch file="pyobjc-framework-cocoa-unused-parameter.patch" strip="1"/>
 		</branch>
 		<dependencies>
@@ -643,9 +643,9 @@
 
 	<distutils id="python3-pyobjc-framework-quartz" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/e9/ec/8dc67a8edc7bfb87494d442fa43d5eef6169e1a09980ced8fdd00b0f9708/pyobjc-framework-Quartz-8.2.tar.gz"
-			hash="sha256:219d8797235bf071723f8b0f30a681de0b12875e2d04ae902a3a269f72de0b66"
-			version="8.2"/>
+			module="/packages/ca/6f/64331d1ed37358d71d39423710724c34e943e6da4acaf9f0e73629b34a5d/pyobjc-framework-Quartz-9.0.1.tar.gz"
+			hash="sha256:7e2e37fc5c01bbdc37c1355d886e6184d1977043d5a05d1d956573fa8503dac3"
+			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 			<patch file="pyobjc-framework-quartz-unused-parameter.patch" strip="1"/>
@@ -657,9 +657,9 @@
 
 	<distutils id="python3-pyobjc-framework-avfoundation" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/16/c3/47c765b912ea3faa6dd2b42cc80f36174e83bd64c2fbac408a0164782edb/pyobjc-framework-AVFoundation-8.2.tar.gz"
-			hash="sha256:fdc3415fc54040556e320e2dd5bcb17b811ea1ede2a91540640abfe6cdfb0baa"
-			version="8.2"/>
+			module="/packages/0c/66/fb469d5370aca72cf2ab62bfb7d67a9e8f3281c3e3076bdd67b84109aa42/pyobjc-framework-AVFoundation-9.0.1.tar.gz"
+			hash="sha256:4afa1d9b2bdf73b8d776f857b217942382c019a709697d266aa9c48b3f9cc620"
+			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -670,9 +670,9 @@
 
 	<distutils id="python3-pyobjc-framework-coremedia" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/06/30/a184ca746f2a54709b71d50ee5d1d23ef5f7223f736320b9dfb2acb82327/pyobjc-framework-CoreMedia-8.2.tar.gz"
-			hash="sha256:6546aa18a3a0aecae0aadaff6b340a3197bda04d860b9408e31f8fb53bd8ab37"
-			version="8.2"/>
+			module="/packages/4f/0a/e24704ae5e7de0d934932128fda1d4b001ab4a09a46a9a5bc6e9341cf08d/pyobjc-framework-CoreMedia-9.0.1.tar.gz"
+			hash="sha256:0d99adad1404525f44a2493b3fe73c3ded61c67f2973c4d940ff9fafb3f85d8f"
+			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -683,9 +683,9 @@
 
 	<distutils id="python3-pyobjc-framework-libdispatch" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/f2/a1/32bcc911ba9a2bc9b196c2e4b508b9dcfb4c4cb0d27be5dd1426adca44d9/pyobjc-framework-libdispatch-8.2.tar.gz"
-			hash="sha256:fdb009bcac3c9d39bb4158cc61e4a7b9bf24b7e1b58b0cc2ccd038d359be371f"
-			version="8.2"/>
+			module="/packages/53/b1/ed3abf2c5d13f497cb94673edb4fc3bd2014a80d758816b567c4478a4743/pyobjc-framework-libdispatch-9.0.1.tar.gz"
+			hash="sha256:988c4c8608f2059c8b80ac520bc8d20a46ff85f65c50749110c45df610141fce"
+			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -696,9 +696,9 @@
 
 	<distutils id="python3-pyobjc-framework-SystemConfiguration" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/e1/c3/6fcfb803e185ec2117e3fb31320b8002332ec4cc791697d6a2ddb4641951/pyobjc-framework-SystemConfiguration-8.2.tar.gz"
-			hash="sha256:e1151ced500d5e528ba0924e85b003441326927201c10e415f7070a9ec8e355c"
-			version="8.2"/>
+			module="/packages/eb/e3/057c5de466858b68e752116cee36c83e3c46a59543b4da9baa6c536cdce5/pyobjc-framework-SystemConfiguration-9.0.1.tar.gz"
+			hash="sha256:0d328f3908b272d987aeaf56913dd4acf35bdb85a0a783cd3907c60e39b75bf3"
+			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
