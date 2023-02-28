@@ -646,7 +646,6 @@
 			version="9.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
-			<patch file="pyobjc-framework-quartz-unused-parameter.patch" strip="1"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
