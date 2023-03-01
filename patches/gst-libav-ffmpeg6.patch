@@ -1,5 +1,5 @@
---- gtk/source/gst-libav-1.22.0/ext/libav/gstavviddec.c	2023-02-28 08:31:42.000000000 -0800
-+++ gtk/source/gst-libav-1.22.0/ext/libav/gstavviddec.c	2023-02-28 08:32:11.000000000 -0800
+--- a/ext/libav/gstavviddec.c	2023-02-28 08:31:42.000000000 -0800
++++ b/ext/libav/gstavviddec.c	2023-02-28 08:32:11.000000000 -0800
 @@ -615,8 +615,7 @@
    if (ffmpegdec->max_threads == 0) {
      /* When thread type is FF_THREAD_FRAME, extra latency is introduced equal
