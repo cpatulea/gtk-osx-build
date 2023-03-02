@@ -4,7 +4,7 @@
              "Quartz.CoreVideo._CVPixelBuffer",
              ["Modules/_CVPixelBuffer.m"],
              extra_link_args=["-framework", "Quartz"],
-+            extra_compile_args=["-Wno-error=unused-but-set-variable"],
++            extra_compile_args=["-Wno-error=unused-const-variable"],
              py_limited_api=True,
          ),
          # CoreGraphics

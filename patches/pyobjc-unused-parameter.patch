@@ -5,7 +5,7 @@
      # "--analyze",
      "-Werror",
 +    "-Wno-error=unused-parameter",
-+    "-Wno-error=unused-but-set-variable",
++    "-Wno-error=unused-const-variable",
      "-I/usr/include/ffi",
      "-fvisibility=hidden",
      "-O0",

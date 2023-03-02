@@ -4,7 +4,7 @@
              "AppKit._AppKit",
              ["Modules/_AppKit.m"],
              extra_link_args=["-framework", "AppKit"],
-+            extra_compile_args=["-Wno-error=unused-but-set-variable"],
++            extra_compile_args=["-Wno-error=unused-const-variable"],
              depends=[
                  os.path.join("Modules", fn)
                  for fn in os.listdir("Modules")
