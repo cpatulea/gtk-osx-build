@@ -119,7 +119,6 @@
     <branch module="gst-libav/gst-libav-1.22.1.tar.xz"
             version="1.22.1"
             hash="sha256:c958e825dc3ac3b7a481f8db5268131a1cd701312385c2d803dc63c8e460b5fb">
-      <patch file="gst-libav-ffmpeg6.patch" strip="1" />
     </branch>
     <dependencies>
       <dep package="gstreamer" />
