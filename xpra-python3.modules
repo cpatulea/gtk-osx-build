@@ -13,9 +13,9 @@
 
 	<distutils id="python3-setuptools" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/d6/6f/9d257b50d60f67d0b54b88fb39d4a9bade8406d4a926da3e4f05bf04f38b/setuptools-67.3.3.tar.gz"
-			hash="sha256:ed4e75fafe103c79b692f217158ba87edf38d31004b9dbc1913debb48793c828"
-			version="67.3.3">
+			module="/packages/25/f3/d68c20919bc774c6cb127f1762f2f2f999d700a58198556e883dd3700e58/setuptools-67.6.0.tar.gz"
+			hash="sha256:2ee892cd5f29f3373097f5a814697e397cf3ce313616df0af11231e2ad118077"
+			version="67.6.0">
 			<patch file="setuptools_make_manageable.patch" strip="1"/>
 		</branch>
 		<dependencies>
