@@ -64,9 +64,9 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch repo="files.pythonhosted.org"
-			module="/packages/6f/a3/3ad6b606a44a1c8e11a2d064b55d16fe99e9a6b25af346e1e5c23e11cf9f/zeroconf-0.47.1.tar.gz"
-			hash="sha256:65ab91068f8fafe00856b63756c72296b69682709681e96e8bb5d101345d5011"
-			version="0.47.1"/>
+			module="/packages/da/9c/7bfd88a90cc6dfc592fb19ebaa938fef86b7d2b1b519ed5681592076fee9/zeroconf-0.47.3.tar.gz"
+			hash="sha256:eb6ad7fdf3ef542c99416c4a5de60c6a4d16d82b336522e0ef6e7d2d2ddca603"
+			version="0.47.3"/>
 		<dependencies>
 			<dep package="python3-ifaddr"/>
 			<dep package="python3-async-timeout"/>
