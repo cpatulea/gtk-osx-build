@@ -3,9 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
 <moduleset>
 
-	<repository type="tarball" name="xpra.org" href="https://xpra.org"/>
-	<repository type="tarball" name="download.gnome.org" default="yes"
-				href="https://download.gnome.org/sources/"/>
+	<repository type="tarball" name="xpra.org" default="yes" href="https://xpra.org"/>
 
 	<include href="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/modulesets-stable/gtk-osx.modules"/>
 	<include href="xpra-tools.modules"/>
@@ -29,7 +27,7 @@
 	</metamodule>
 
 	<distutils id="python3-xpra" python3="1">
-		<branch repo="xpra.org"
+		<branch
 			module="src/xpra-4.4.4.tar.xz"
 			hash="sha256:a0f6bd102a8213df8fadc66e7ec1d6611e841f14d954524e31494ad9bd26c0b1"
 			version="4.4.4"/>
