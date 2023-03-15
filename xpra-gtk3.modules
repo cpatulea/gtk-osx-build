@@ -29,7 +29,7 @@
 	</metamodule>
 
 	<distutils id="python3-xpra" python3="1">
-		<branch repo="files.pythonhosted.org"
+		<branch repo="xpra.org"
 			module="src/xpra-4.4.4.tar.xz"
 			hash="sha256:a0f6bd102a8213df8fadc66e7ec1d6611e841f14d954524e31494ad9bd26c0b1"
 			version="4.4.4"/>
