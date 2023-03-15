@@ -9,14 +9,8 @@
 	<repository type="tarball" name="liboil" href="http://liboil.freedesktop.org/download/"/>
 	<repository type="tarball" name="downloads.xiph.org" href="http://downloads.xiph.org"/>
 	<repository type="tarball" name="xpra.org" href="https://xpra.org"/>
-	<repository type="tarball" name="download.videolan.org" href="http://download.videolan.org"/>
 	<repository type="tarball" name="downloads.webmproject.org" href="http://downloads.webmproject.org"/>
 	<repository type="tarball" name="ffmpeg.org" href="http://ffmpeg.org"/>
-	<repository type="tarball" name="www.libsdl.org" href="http://www.libsdl.org"/>
-	<repository type="tarball" name="gmplib.org" href="http://gmplib.org/"/>
-	<repository type="tarball" name="www.mpfr.org" href="http://www.mpfr.org"/>
-	<repository type="tarball" name="download.oracle.com" href="http://download.oracle.com"/>
-	<repository type="tarball" name="storage.googleapis.com" href="http://storage.googleapis.com/"/>
 	<repository type="tarball" name="download.gnome.org" default="yes" href="https://download.gnome.org/sources/"/>
 	<repository type="tarball" name="github.com" default="yes" href="https://github.com/"/>
 	<repository type="tarball" name="archive.mozilla.org" href="https://archive.mozilla.org"/>
@@ -201,13 +195,6 @@
 			<dep package="x264"/>
 			<dep package="libvpx"/>
 		</after>
-	</autotools>
-
-	<autotools id="sdl" autogenargs="" autogen-sh="configure">
-		<branch module="/release/SDL-1.2.15.tar.gz"
-			version="1.2.15"
-			hash="md5:9d96df8417572a2afb781a7c4c811a85"
-			repo="www.libsdl.org"/>
 	</autotools>
 
 	<cmake id="libyuv">
