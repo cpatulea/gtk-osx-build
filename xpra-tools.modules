@@ -3,25 +3,16 @@
 <?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
 <moduleset>
 
-	<repository name="openssl" type="tarball" href="https://www.openssl.org/source/"/>
+	<repository type="tarball" name="openssl" href="https://www.openssl.org/source/"/>
 	<repository type="tarball" name="cpan.org" href="http://www.cpan.org/"/>
 	<repository type="tarball" name="sourceforge.net" href="http://downloads.sourceforge.net"/>
 	<repository type="tarball" name="ftp.gnu.org" href="ftp://ftp.gnu.org"/>
 	<repository type="tarball" name="ftp.pcre.org" href="https://ftp.pcre.org"/>
 	<repository type="tarball" name="gmplib.org" href="http://gmplib.org/"/>
 	<repository type="tarball" name="www.mpfr.org" href="http://www.mpfr.org"/>
-	<repository type="tarball" name="download.oracle.com" href="http://download.oracle.com"/>
-	<repository type="tarball" name="xpra.org" href="https://xpra.org"/>
-	<repository type="tarball" name="storage.googleapis.com" href="http://storage.googleapis.com/"/>
-	<repository type="tarball" name="download.gnome.org" default="yes" href="https://download.gnome.org/sources/"/>
-	<repository type="tarball" name="oberhumer.com" default="yes" href="http://www.oberhumer.com/"/>
 	<repository type="tarball" name="github.com" default="yes" href="https://github.com/"/>
-	<repository type="tarball" name="archive.mozilla.org" href="https://archive.mozilla.org"/>
 	<repository type="tarball" name="curl.haxx.se" href="https://curl.haxx.se"/>
-	<repository type="tarball" name="pypi.python.org" href="https://pypi.python.org"/>
 	<repository type="git" name="github" href="https://github.com/"/>
-
-	<repository type="tarball" name="apache.org" href="http://www.apache.org/"/>
 	<repository type="tarball" name="sqlite.org" href="http://sqlite.org"/>
 
 
