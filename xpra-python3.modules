@@ -58,7 +58,7 @@
 
 	<distutils id="python3-zeroconf" python3="1">
 		<branch
-			module="6e/c6/32527e020701ac484977ffc1d446e551a9e0eb37226128ea9ef99f9675e8/zeroconf-0.52.0.tar.gz
+			module="6e/c6/32527e020701ac484977ffc1d446e551a9e0eb37226128ea9ef99f9675e8/zeroconf-0.52.0.tar.gz"
 			hash="sha256:89f6db03098c805543830d4adbde6cf95ae5c08bc2d4967c77f6f0a4b977ec8c"
 			version="0.52.0"/>
 		<dependencies>
