@@ -110,7 +110,7 @@
 		</dependencies>
 	</autotools>
 
-	<autotools id="opus" autogenargs="" autogen-sh="configure">
+	<autotools id="opus" autogenargs="" autogen-sh="autogen.sh">
 		<branch module="/xiph/opus/archive/refs/tags/v1.4.tar.gz"
 			version="1.4" checkoutdir="opus-1.4"
 			hash="sha256:659e6b223e42a51b0a898632b9a5f406ccd5c2e00aa526ddd1264789774b94e5"
