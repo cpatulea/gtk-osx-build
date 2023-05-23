@@ -85,7 +85,7 @@
   <meson id="gst-plugins-good">
     <branch module="gst-plugins-good/gst-plugins-good-1.22.3.tar.xz"
             version="1.22.3"
-            hash="sha256:7c8cc59425f2b232f60ca71c596289a0d4207380233eba8c36a932c4d1aceba19932937d9b57c24cef89f3d13e56edd615da4f711e73dd01a7cffa46e6bc0cdd">
+            hash="sha256:af81154b3a2ef3f4d2feba395f25696feea6fd13ec62c92d3c7a973470710273">
     </branch>
     <dependencies>
       <dep package="gstreamer" />
