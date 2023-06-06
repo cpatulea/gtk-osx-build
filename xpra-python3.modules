@@ -187,9 +187,9 @@
 
 	<distutils id="python3-cryptography" python3="1">
 		<branch
-			module="f7/80/04cc7637238b78f8e7354900817135c5a23cf66dfb3f3a216c6d630d6833/cryptography-40.0.2.tar.gz"
-			hash="sha256:c33c0d32b8594fa647d2e01dbccc303478e16fdd7cf98652d5b3ed11aa5e5c99"
-			version="40.0.2"/>
+			module="19/8c/47f061de65d1571210dc46436c14a0a4c260fd0f3eaf61ce9b9d445ce12f/cryptography-41.0.1.tar.gz"
+			hash="sha256:d34579085401d3f49762d2f7d6634d6b6c2ae1242202e860f4d26b046e3a1006"
+			version="41.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
@@ -296,9 +296,9 @@
 
 	<distutils id="python3-paramiko" python3="1">
 		<branch
-			module="e8/53/e614a5b7bcc658d20e6eff6ae068863becb06bf362c2f135f5c290d8e6a2/paramiko-3.1.0.tar.gz"
-			hash="sha256:6950faca6819acd3219d4ae694a23c7a87ee38d084f70c1724b0c0dbb8b75769"
-			version="3.1.0">
+			module="87/62/cee9551811c846e9735f749dbdf05d4f9f0dbcecd66eae35b5daacf9a117/paramiko-3.2.0.tar.gz"
+			hash="sha256:93cdce625a8a1dc12204439d45033f3261bdb2c201648cfcdc06f9fd0f94ec29"
+			version="3.2.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
