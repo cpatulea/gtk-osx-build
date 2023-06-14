@@ -343,7 +343,7 @@
 	<distutils id="python3-pylsqpack" python3="1">
 		<branch
 			module="40/15/e38751187d1db74efce30d45e72ae0035e506101585e28eee525bc465f7e/pylsqpack-0.3.17.tar.gz"
-			hash="sha256:b67a6ce3f6937d850681827714be730aa361c049e37752e3ed9df11e7f232ffb"
+			hash="sha256:46762cc6993ee64c24dcaf9ec8665dbd68633efc7198ceb65a27e5232b9760c6"
 			version="0.3.17">
 		</branch>
 		<dependencies>
