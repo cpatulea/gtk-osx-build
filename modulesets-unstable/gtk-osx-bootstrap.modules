@@ -33,9 +33,9 @@
   </cmake>
 
   <autotools id="libtiff" autogen-sh="configure" autogenargs="--without-x">
-    <branch module="libtiff/tiff-4.5.0.tar.gz"
-            version="4.5.0"
-            hash="sha256:c7a1d9296649233979fa3eacffef3fa024d73d05d589cb622727b5b08c423464"
+    <branch module="libtiff/tiff-4.5.1.tar.xz"
+            version="4.5.1"
+            hash="sha256:3c080867114c26edab3129644a63b708028a90514b7fe3126e38e11d24f9f88a"
             repo="libtiff">
       <patch file="tiff-nohtml.patch"
              strip="1" />

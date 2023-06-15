@@ -61,7 +61,7 @@
              autogenargs="--without-x">
     <branch module="libtiff/tiff-4.5.1.tar.xz"
             version="4.5.1"
-            hash="sha256:d7f38b6788e4a8f5da7940c5ac9424f494d8a79eba53d555f4a507167dca5e2b"
+            hash="sha256:3c080867114c26edab3129644a63b708028a90514b7fe3126e38e11d24f9f88a"
             repo="libtiff">
       <patch file="tiff-nohtml.patch"
              strip="1" />
