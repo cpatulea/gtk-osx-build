@@ -255,9 +255,9 @@
 
 	<distutils id="python3-cython" python3="1">
 		<branch
-			module="da/a0/298340fb8412574a0b00a0d9856aa27e7038da429b9e31d6825173d1e6bd/Cython-0.29.35.tar.gz"
-			hash="sha256:6e381fa0bf08b3c26ec2f616b19ae852c06f5750f4290118bf986b6f85c8c527"
-			version="0.29.35"/>
+			module="38/db/df0e99d6c5fe19ee5c981d22aad557be4bdeed3ecfae25d47b84b07f0f98/Cython-0.29.36.tar.gz"
+			hash="sha256:41c0cfd2d754e383c9eeb95effc9aa4ab847d0c9747077ddd7c0dcb68c3bc01f"
+			version="0.29.36"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
