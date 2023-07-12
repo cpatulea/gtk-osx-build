@@ -368,6 +368,20 @@
 		</after>
 	</distutils>
 
+	<distutils id="python3-wheel" python3="1">
+		<branch
+			module="fc/ef/0335f7217dd1e8096a9e8383e1d472aa14717878ffe07c4772e68b6e8735/wheel-0.40.0.tar.gz"
+			hash="sha256:cd1196f3faee2b31968d626e1731c94f99cbdb67cf5a46e4f5656cbee7738873"
+			version="0.40.0">
+		</branch>
+		<dependencies>
+			<dep package="python3"/>
+		</dependencies>
+		<after>
+			<dep package="python3"/>
+		</after>
+	</distutils>
+
 	<distutils id="python3-aioquic" python3="1">
 		<branch
 			module="29/fe/1099419da44ce9ee372463a7ba8b6cd94c0187e7bb1e9fa5e7a997b09683/aioquic-0.9.21.tar.gz"
@@ -381,6 +395,7 @@
 			<dep package="python3-pyopenssl"/>
 			<dep package="python3-pylsqpack"/>
 			<dep package="python3-certifi"/>
+			<dep package="python3-wheel"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
@@ -815,6 +830,7 @@
 		  <dep package="python3-pyopenssl"/>
 		  <dep package="python3-pylsqpack"/>
 		  <dep package="python3-certifi"/>
+		  <dep package="python3-wheel"/>
 		  <dep package="python3-aioquic"/>
 		  <dep package="python3-dns"/>
 		  <dep package="python3-ldap3"/>
