@@ -370,9 +370,9 @@
 
 	<distutils id="python3-aioquic" python3="1">
 		<branch
-			module="91/93/53f91b13c15b45386e0faa84c89f0e09a3eceb3903c856519b6681faf88c/aioquic-0.9.20.tar.gz"
-			hash="sha256:ec436aaace997b846b01e5200edbf7e3e56b91826a144efb9748fd8ddd332bbe"
-			version="0.9.20">
+			module="29/fe/1099419da44ce9ee372463a7ba8b6cd94c0187e7bb1e9fa5e7a997b09683/aioquic-0.9.21.tar.gz"
+			hash="sha256:79c7ec06318e785627665ca4e8723adf347b7225b7d006e332d2575a1f516ef5"
+			version="0.9.21">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
