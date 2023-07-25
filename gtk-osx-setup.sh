@@ -57,7 +57,7 @@ envvar DEV_SRC_ROOT "$DEVROOT/Source"
 envvar PYENV_INSTALL_ROOT "$DEV_SRC_ROOT/pyenv"
 envvar PYENV_ROOT "$DEVPREFIX/share/pyenv"
 envvar PIP_CONFIG_DIR "$HOME/.config/pip"
-envvar PYTHON_VERSION 3.10.10
+envvar PYTHON_VERSION 3.11.4
 
 export PYTHONWARNINGS=ignore:DEPRECATION::pip._internal.cli.base_command
 
@@ -70,7 +70,7 @@ GITHUB="https://github.com"
 
 # We need to have a local copy of bash when compiling to prevent SIP problems.
 if test ! -x "$DEVPREFIX/bin/bash"; then
-    cp /bin/bash "$DEVPREFIX/bin"
+    ln -s /bin/bash "$DEVPREFIX/bin"
 fi
 
 # Setup pyenv
@@ -124,7 +124,7 @@ fi
 # Install Ninja
 NINJA=`which ninja`
 if test ! -x "$NINJA" -a ! -x "$DEVPREFIX/bin/ninja"; then
-    curl -kLs https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-mac.zip -o "$DEVPREFIX/ninja-mac.zip"
+    curl -kLs https://github.com/ninja-build/ninja/releases/download/v1.11.1/ninja-mac.zip -o "$DEVPREFIX/ninja-mac.zip"
     unzip -d "$DEVPREFIX/bin" "$DEVPREFIX/ninja-mac.zip"
     rm "$DEVPREFIX/ninja-mac.zip"
 fi
@@ -170,6 +170,8 @@ pygments = "*"
 meson = {version=">=0.56.0"}
 docutils = "*"
 gi-docgen = "*"
+setuptools = "*"
+packaging = "*"
 
 [scripts]
 jhbuild = "$DEVPREFIX/libexec/run_jhbuild.py"
