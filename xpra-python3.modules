@@ -625,9 +625,9 @@
 
 	<distutils id="python3-pyobjc-core" python3="1">
 		<branch
-			module="1e/20/75b43cd85d8676d15f7d3876e8b64415bfd7b7f937710f9966738723daf3/pyobjc-core-9.0.1.tar.gz"
-			hash="sha256:5ce1510bb0bdff527c597079a42b2e13a19b7592e76850be7960a2775b59c929"
-			version="9.0.1">
+			module="48/d9/a13566ce8914746557b9e8637a5abe1caae86ed202b0fb072029626b8bb1/pyobjc-core-9.2.tar.gz"
+			hash="sha256:d734b9291fec91ff4e3ae38b9c6839debf02b79c07314476e87da8e90b2c68c3"
+			version="9.2">
 			<patch file="pyobjc-unused-parameter.patch" strip="1"/>
 		</branch>
 		<dependencies>
@@ -640,9 +640,9 @@
 
 	<distutils id="python3-pyobjc-framework-cocoa" python3="1">
 		<branch
-			module="b5/35/da77d26b9b6ee97fede0a9364273aaa7970fea7947d15c0e28efd345db0e/pyobjc-framework-Cocoa-9.0.1.tar.gz"
-			hash="sha256:a8b53b3426f94307a58e2f8214dc1094c19afa9dcb96f21be12f937d968b2df3"
-			version="9.0.1"/>
+			module="38/91/c54fdffda6d7cfad67ff617f19001163658d50bc72376d1584e691cf4895/pyobjc-framework-Cocoa-9.2.tar.gz"
+			hash="sha256:efd78080872d8c8de6c2b97e0e4eac99d6203a5d1637aa135d071d464eb2db53"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -653,9 +653,9 @@
 
 	<distutils id="python3-pyobjc-framework-quartz" python3="1">
 		<branch
-			module="ca/6f/64331d1ed37358d71d39423710724c34e943e6da4acaf9f0e73629b34a5d/pyobjc-framework-Quartz-9.0.1.tar.gz"
-			hash="sha256:7e2e37fc5c01bbdc37c1355d886e6184d1977043d5a05d1d956573fa8503dac3"
-			version="9.0.1"/>
+			module="49/52/a56bbd76bba721f49fa07d34ac962414b95eb49a9b941fe4d3761f3e6934/pyobjc-framework-Quartz-9.2.tar.gz"
+			hash="sha256:f586183b9b9ef7f165f0444a7b714ed965d79f6e92617caaf869150dcfd5a72b"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -666,9 +666,9 @@
 
 	<distutils id="python3-pyobjc-framework-avfoundation" python3="1">
 		<branch
-			module="0c/66/fb469d5370aca72cf2ab62bfb7d67a9e8f3281c3e3076bdd67b84109aa42/pyobjc-framework-AVFoundation-9.0.1.tar.gz"
-			hash="sha256:4afa1d9b2bdf73b8d776f857b217942382c019a709697d266aa9c48b3f9cc620"
-			version="9.0.1"/>
+			module="9f/0c/f91c9bf84a1f175685c65e3d2b4893f88f41cf12b6d5da03cf00b627e34f/pyobjc-framework-AVFoundation-9.2.tar.gz"
+			hash="sha256:ecf0db71abad6baf127e454e9995adf372249ec6b99e3ede8b6149460ee39c35"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -679,9 +679,9 @@
 
 	<distutils id="python3-pyobjc-framework-coremedia" python3="1">
 		<branch
-			module="4f/0a/e24704ae5e7de0d934932128fda1d4b001ab4a09a46a9a5bc6e9341cf08d/pyobjc-framework-CoreMedia-9.0.1.tar.gz"
-			hash="sha256:0d99adad1404525f44a2493b3fe73c3ded61c67f2973c4d940ff9fafb3f85d8f"
-			version="9.0.1"/>
+			module="a9/2f/4131ac7b4a400b3767c40fb7f17f46d0caf8dc66b6ae400d1489fc596329/pyobjc-framework-CoreMedia-9.2.tar.gz"
+			hash="sha256:6345b47775aea573082e9a81bd52a3e19ce1a7d74f5064046909a8007e68dbe9"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -692,9 +692,9 @@
 
 	<distutils id="python3-pyobjc-framework-libdispatch" python3="1">
 		<branch
-			module="53/b1/ed3abf2c5d13f497cb94673edb4fc3bd2014a80d758816b567c4478a4743/pyobjc-framework-libdispatch-9.0.1.tar.gz"
-			hash="sha256:988c4c8608f2059c8b80ac520bc8d20a46ff85f65c50749110c45df610141fce"
-			version="9.0.1"/>
+			module="f1/73/455a8b92d3fc5b47b22e8055b6df19be96b2aa13715676e70a9cb7ed00b2/pyobjc-framework-libdispatch-9.2.tar.gz"
+			hash="sha256:542e7f7c2b041939db5ed6f3119c1d67d73ec14a996278b92485f8513039c168"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -705,9 +705,9 @@
 
 	<distutils id="python3-pyobjc-framework-SystemConfiguration" python3="1">
 		<branch
-			module="eb/e3/057c5de466858b68e752116cee36c83e3c46a59543b4da9baa6c536cdce5/pyobjc-framework-SystemConfiguration-9.0.1.tar.gz"
-			hash="sha256:0d328f3908b272d987aeaf56913dd4acf35bdb85a0a783cd3907c60e39b75bf3"
-			version="9.0.1"/>
+			module="a1/49/d59fb1cb18bcb901de39faee2244eaedc33162be06bccf5baf5d2945d487/pyobjc-framework-SystemConfiguration-9.2.tar.gz"
+			hash="sha256:0473a97d66ff0937df8f8d2c7109edc6ca8797d711d727823b296f0cff9878fb"
+			version="9.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
