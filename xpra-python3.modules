@@ -545,9 +545,9 @@
 
 	<distutils id="python3-modulegraph" python3="1">
 		<branch
-			module="c1/52/aad6eb110a2a33860fced95ccee0a733657b3065864bc8ff215e116854f8/modulegraph-0.19.3.tar.gz"
-			hash="sha256:0d7817afd71d9aba86b86db014f405cc225f397217eec94bc8f6f473deffb761"
-			version="0.19.3"/>
+			module="c8/08/88565eeff92d6f0be7a9878c93e2495e1646eee839010230e2ee11e1622e/modulegraph-0.19.5.tar.gz"
+			hash="sha256:1389108c8bdd0dd51c99df0d59160515a37a9150cddfb86d114326226bcd11b8"
+			version="0.19.5"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
