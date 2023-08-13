@@ -239,9 +239,9 @@
 
 	<distutils id="python3-py2app" python3="1">
 		<branch
-			module="fd/83/f4e467a1e26c0c22ad1a8ae6a9def240bed934e9515be83a41e2bb423284/py2app-0.28.5.tar.gz"
-			hash="sha256:c7b1233e2c896c0c4b6a8946fb0cee248866129c3b6db390ffa568a8325e734f"
-			version="0.28.5"/>
+			module="66/ea/9d079bdeec1c6c6b053edb4e7d9dfe7e577ffbf1702a43f698fdc164f6c5/py2app-0.28.6.tar.gz"
+			hash="sha256:8dbd5f638d1cf63d6479f3095922b4e030d13de83da6a2a802c58c7d0f9e0a8e"
+			version="0.28.6"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-macholib"/>
