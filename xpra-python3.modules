@@ -719,10 +719,9 @@
 
 	<distutils id="python3-rencode" python3="1">
 		<branch
-			module="aresch/rencode/archive/refs/tags/v1.0.6.tar.gz"
-			hash="sha256:0ed61111f053ea37511da86ca7aed2a3cfda6bdaa1f54a237c4b86eea52f0733"
+			module="3a/fb/3c03dbe4438dd596e1378b5299990b81041739658a76e0f4a301eded67f4/rencode-1.0.6.tar.gz"
+			hash="sha256:2586435c4ea7d45f74e26765ad33d75309de7cf47c4d762e8efabd39905c0718"
 			version="1.0.6"
-			checkoutdir="rencode-1.0.6">
 			<patch file="python-rencode-typecode-dos.patch" strip="1"/>
 		</branch>
 		<dependencies>
