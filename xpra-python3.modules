@@ -256,10 +256,10 @@
 	<distutils id="python3-cython" python3="1">
 		<branch
 			repo="github.com"
-			module="cython/cython/archive/refs/tags/3.0.1.tar.gz"
-			checkoutdir="cython-3.0.1"
-			hash="sha256:8a142815f6483a45065fa2698ee2119bfe097c7a6e292d0da3d223d15d4a73bb"
-			version="3.0.1"/>
+			module="cython/cython/archive/refs/tags/3.0.2.tar.gz"
+			checkoutdir="cython-3.0.2"
+			hash="sha256:b0c0af0d1c6b65f951aba18c4d52877894e56f5bf7cbe99719fb6988a1585f47t"
+			version="3.0.2"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
