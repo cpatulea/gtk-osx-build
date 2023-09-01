@@ -256,9 +256,8 @@
 	<distutils id="python3-cython" python3="1">
 		<branch
 			repo="github.com"
-			module="cython/cython/archive/refs/tags/3.0.2.tar.gz"
-			checkoutdir="cython-3.0.2"
-			hash="sha256:b0c0af0d1c6b65f951aba18c4d52877894e56f5bf7cbe99719fb6988a1585f47t"
+			module="2f/81/c9fb4b69823f674e1e2acc484eac93a47a1e3a59d4d051c76259dadd6984/Cython-3.0.2.tar.gz"
+			hash="sha256:9594818dca8bb22ae6580c5222da2bc5cc32334350bd2d294a00d8669bcc61b5"
 			version="3.0.2"/>
 		<dependencies>
 			<dep package="python3"/>
