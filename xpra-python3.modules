@@ -716,41 +716,11 @@
 		</after>
 	</distutils>
 
-
-	<distutils id="python3-rencode" python3="1">
-		<branch
-			module="aresch/rencode/archive/refs/tags/v1.0.6.tar.gz"
-			hash="sha256:0ed61111f053ea37511da86ca7aed2a3cfda6bdaa1f54a237c4b86eea52f0733"
-			version="1.0.6"
-			checkoutdir="rencode-1.0.6">
-			<patch file="python-rencode-typecode-dos.patch" strip="1"/>
-		</branch>
-		<dependencies>
-			<dep package="python3"/>
-		</dependencies>
-		<after>
-			<dep package="python3"/>
-		</after>
-	</distutils>
-
 	<distutils id="python3-pysocks" python3="1">
 		<branch
 			module="bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz"
 			hash="sha256:3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0"
 			version="1.7.1" />
-		<dependencies>
-			<dep package="python3"/>
-		</dependencies>
-		<after>
-			<dep package="python3"/>
-		</after>
-	</distutils>
-
-	<distutils id="python3-yaml" python3="1">
-		<branch
-			module="cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz"
-			hash="sha256:bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
-			version="6.0.1"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
