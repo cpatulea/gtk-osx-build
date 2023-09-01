@@ -516,9 +516,9 @@
 
 	<distutils id="python3-gssapi" python3="1">
 		<branch
-			module="27/71/5110b5af9354e5eb66a30dbaa6bac2a5e3013057120544830a849dbd087b/gssapi-1.8.2.tar.gz"
-			hash="sha256:b78e0a021cc91158660e4c5cc9263e07c719346c35a9c0f66725e914b235c89a"
-			version="1.8.2">
+			module="13/e7/dd88180cfcf243be62308707cc2f5dae4c726c68f30b9367931c794fda16/gssapi-1.8.3.tar.gz"
+			hash="sha256:aa3c8d0b1526f52559552bb2c9d2d6be013d76a8e5db00b39a1db5727e93b0b0"
+			version="1.8.3">
 		</branch>
 		<dependencies>
 			<dep package="python3-decorator"/>
