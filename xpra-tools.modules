@@ -96,6 +96,13 @@
 			repo="github.com"/>
 	</cmake>
 
+	<cmake id="xxhash" cmakeargs="-DCMAKE_INSTALL_PREFIX=" autogen-sh="configure">
+		<branch module="/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz"
+			version="0.8.2" checkoutdir="xxHash-0.8.2"
+			hash="sha256:baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4"
+			repo="github.com"/>
+	</cmake>
+
 	<autotools id="gmplib" autogen-sh="configure">
 		<branch module="/download/gmp/gmp-6.2.1.tar.xz"
 			version="6.2.1"
@@ -155,6 +162,7 @@
 		<dependencies>
 			<dep package="brotli"/>
 			<dep package="sshpass"/>
+			<dep package="xxhash"/>
 			<dep package="gtk-mac-bundler"/>
 		</dependencies>
 	</metamodule>
