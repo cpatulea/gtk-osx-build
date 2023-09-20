@@ -411,9 +411,9 @@
   <autotools id="librsvg"
              autogen-sh="autoreconf"
              autogenargs="--disable-Bsymbolic">
-    <branch module="librsvg/2.56/librsvg-2.56.1.tar.xz"
-            version="2.56.1"
-            hash="sha256:1685aeacae9a441dcb12c0c3ec63706172a2f52705dafbefb8e7311d4d5e430b" />
+    <branch module="librsvg/2.56/librsvg-2.56.4.tar.xz"
+            version="2.56.4"
+            hash="sha256:ea87fdcf5159348fcb08b14c43e91a9d3d9e45dc2006a875d1711bb65b6740f5" />
     <dependencies>
       <dep package="libxml2"/>
       <dep package="cairo" />
