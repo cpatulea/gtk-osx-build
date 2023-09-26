@@ -625,9 +625,9 @@
 
 	<distutils id="python3-pyobjc-core" python3="1">
 		<branch
-			module="48/d9/a13566ce8914746557b9e8637a5abe1caae86ed202b0fb072029626b8bb1/pyobjc-core-9.2.tar.gz"
-			hash="sha256:d734b9291fec91ff4e3ae38b9c6839debf02b79c07314476e87da8e90b2c68c3"
-			version="9.2">
+			module="a4/ca/9f5f8aab90b7b9d006ee40e08dcfa1a5f74ab10b4504951bca97379016aa/pyobjc-core-10.0.tar.gz"
+			hash="sha256:3dd0a7b3acd7e0b8ffd3f5331b29a3aaebe79a03323e61efeece38627a6020b3"
+			version="10.0">
 			<patch file="pyobjc-unused-parameter.patch" strip="1"/>
 		</branch>
 		<dependencies>
@@ -640,9 +640,9 @@
 
 	<distutils id="python3-pyobjc-framework-cocoa" python3="1">
 		<branch
-			module="38/91/c54fdffda6d7cfad67ff617f19001163658d50bc72376d1584e691cf4895/pyobjc-framework-Cocoa-9.2.tar.gz"
+			module="50/86/afa561caab8883b2ce155fd0067f6265bf10780a4db08bff3d76714c1dc4/pyobjc-framework-Cocoa-10.0.tar.gz"
 			hash="sha256:efd78080872d8c8de6c2b97e0e4eac99d6203a5d1637aa135d071d464eb2db53"
-			version="9.2"/>
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -653,9 +653,9 @@
 
 	<distutils id="python3-pyobjc-framework-quartz" python3="1">
 		<branch
-			module="49/52/a56bbd76bba721f49fa07d34ac962414b95eb49a9b941fe4d3761f3e6934/pyobjc-framework-Quartz-9.2.tar.gz"
-			hash="sha256:f586183b9b9ef7f165f0444a7b714ed965d79f6e92617caaf869150dcfd5a72b"
-			version="9.2"/>
+			module="3e/be/f2d67b25f6b047139a4b665e369f0db28ae0c64524f86a1f948eaa8ee39f/pyobjc-framework-Quartz-10.0.tar.gz"
+			hash="sha256:ff7c938d9c8adff87d577d63e58f9be6e4bc75274384715fa7a20032a1ce8b0e"
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -666,9 +666,9 @@
 
 	<distutils id="python3-pyobjc-framework-avfoundation" python3="1">
 		<branch
-			module="9f/0c/f91c9bf84a1f175685c65e3d2b4893f88f41cf12b6d5da03cf00b627e34f/pyobjc-framework-AVFoundation-9.2.tar.gz"
-			hash="sha256:ecf0db71abad6baf127e454e9995adf372249ec6b99e3ede8b6149460ee39c35"
-			version="9.2"/>
+			module="7e/6f/5623cecd7e1d57600582b9912caf204f2a1523e69b743b5f2d4fd13b9dc4/pyobjc-framework-AVFoundation-10.0.tar.gz"
+			hash="sha256:40366a8c6bb964e7b7263e8cf060350f69ad365e6a5356d6ccab9f256a9987f7"
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -679,9 +679,9 @@
 
 	<distutils id="python3-pyobjc-framework-coremedia" python3="1">
 		<branch
-			module="a9/2f/4131ac7b4a400b3767c40fb7f17f46d0caf8dc66b6ae400d1489fc596329/pyobjc-framework-CoreMedia-9.2.tar.gz"
-			hash="sha256:6345b47775aea573082e9a81bd52a3e19ce1a7d74f5064046909a8007e68dbe9"
-			version="9.2"/>
+			module="06/25/6e67e6bb4c476970d8f7c51d110c0d48f6fa90fa30c0183feafb2633f63d/pyobjc-framework-CoreMedia-10.0.tar.gz"
+			hash="sha256:27d0755cbd3ae3b487ace5e3233f0598b976905f43357b71fd73489865f7b9e1"
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -692,9 +692,9 @@
 
 	<distutils id="python3-pyobjc-framework-libdispatch" python3="1">
 		<branch
-			module="f1/73/455a8b92d3fc5b47b22e8055b6df19be96b2aa13715676e70a9cb7ed00b2/pyobjc-framework-libdispatch-9.2.tar.gz"
-			hash="sha256:542e7f7c2b041939db5ed6f3119c1d67d73ec14a996278b92485f8513039c168"
-			version="9.2"/>
+			module="fc/62/2bb9fe9f9e8bcef80180f5928eb55644728044633380c006878f62ddea9b/pyobjc-framework-libdispatch-10.0.tar.gz"
+			hash="sha256:228adf364c895d2a0e8b08bd06f7a23cfbd8e82e9ea6cfdba73bdee0651a4e1f"
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -705,9 +705,9 @@
 
 	<distutils id="python3-pyobjc-framework-SystemConfiguration" python3="1">
 		<branch
-			module="a1/49/d59fb1cb18bcb901de39faee2244eaedc33162be06bccf5baf5d2945d487/pyobjc-framework-SystemConfiguration-9.2.tar.gz"
-			hash="sha256:0473a97d66ff0937df8f8d2c7109edc6ca8797d711d727823b296f0cff9878fb"
-			version="9.2"/>
+			module="97/19/a932bcc059c5c33c74f56e7b62d460eec2515bd0124e37dfe223d150b137/pyobjc-framework-SystemConfiguration-10.0.tar.gz"
+			hash="sha256:f9ab1759933c77688615810f8278519158273a658f11fc3d75a1a2446fd0f774"
+			version="10.0"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
