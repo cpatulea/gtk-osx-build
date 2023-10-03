@@ -814,8 +814,6 @@
 		  <dep package="python3-idna"/>
 		  <dep package="python3-cryptography"/>
 		  <dep package="python3-pysocks"/>
-		  <dep package="python3-rencode"/>
-		  <dep package="python3-yaml"/>
 		  <dep package="python3-psutil"/>
 		  <dep package="python3-pyopengl"/>
 		  <dep package="python3-pyopengl-accelerate"/>
