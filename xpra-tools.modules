@@ -85,8 +85,8 @@
 		</branch>
 	</autotools>
 
-	<autotools id="xar" autogen-sh="cd xar;./autogen.sh" supports-non-srcdir-builds="no">
-		<branch repo="github" module="typeling1578/xar"/>
+	<autotools id="xar" autogen-sh="autogen.sh" supports-non-srcdir-builds="no">
+		<branch repo="github" module="typeling1578/xar" subdir="xar"/>
 	</autotools>
 
 	<cmake id="brotli" cmakeargs="-DCMAKE_MACOSX_RPATH=true" autogen-sh="configure">
