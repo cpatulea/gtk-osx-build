@@ -384,9 +384,9 @@
 
 	<distutils id="python3-aioquic" python3="1">
 		<branch
-			module="29/fe/1099419da44ce9ee372463a7ba8b6cd94c0187e7bb1e9fa5e7a997b09683/aioquic-0.9.21.tar.gz"
-			hash="sha256:79c7ec06318e785627665ca4e8723adf347b7225b7d006e332d2575a1f516ef5"
-			version="0.9.21">
+			module="37/c8/bac80ecdc006fc54d1519684015b1f1a685b9d0157f325c1a841a1becd26/aioquic-0.9.22.tar.gz"
+			hash="sha256:4015f60d865e101f3ddde86702cb11f9c5d889f5566020242c2a3d6706999c7a"
+			version="0.9.22">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
