@@ -32,7 +32,7 @@
             repo="github-tarball" checkoutdir="libjpeg-turbo-2.1.5.1" />
   </cmake>
 
-  <autotools id="libtiff" autogen-sh="configure" autogenargs="--without-x">
+  <autotools id="libtiff" autogen-sh="configure" autogenargs="--without-x --without-jpeg">
     <branch module="libtiff/tiff-4.5.1.tar.xz"
             version="4.5.1"
             hash="sha256:3c080867114c26edab3129644a63b708028a90514b7fe3126e38e11d24f9f88a"
