@@ -370,9 +370,9 @@
 
 	<distutils id="python3-wheel" python3="1">
 		<branch
-			module="fc/ef/0335f7217dd1e8096a9e8383e1d472aa14717878ffe07c4772e68b6e8735/wheel-0.40.0.tar.gz"
-			hash="sha256:cd1196f3faee2b31968d626e1731c94f99cbdb67cf5a46e4f5656cbee7738873"
-			version="0.40.0">
+			module="fb/d0/0b4c18a0b85c20233b0c3bc33f792aefd7f12a5832b4da77419949ff6fd9/wheel-0.41.3.tar.gz"
+			hash="sha256:4d4987ce51a49370ea65c0bfd2234e8ce80a12780820d9dc462597a6e60d0841"
+			version="0.41.3">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
