@@ -530,9 +530,9 @@
 
 	<distutils id="python3-macholib" python3="1">
 		<branch
-			module="46/92/bffe4576b383f20995ffb15edccf1c97d2e39f9a8c72136836407f099277/macholib-1.16.2.tar.gz"
-			hash="sha256:557bbfa1bb255c20e9abafe7ed6cd8046b48d9525db2f9b77d3122a63a2a8bf8"
-			version="1.16.2">
+			module="95/ee/af1a3842bdd5902ce133bd246eb7ffd4375c38642aeb5dc0ae3a0329dfa2/macholib-1.16.3.tar.gz"
+			hash="sha256:07ae9e15e8e4cd9a788013d81f5908b3609aa76f9b1421bae9c4d7606ec86a30"
+			version="1.16.3">
 			<patch file="macholib-dyldcache.patch" strip="1"/>
 		</branch>
 		<dependencies>
