@@ -52,9 +52,9 @@
 	</autotools>
 
 	<autotools id="cpio" autogen-sh="configure">
-		<branch module="/gnu/cpio/cpio-2.13.tar.bz2"
-			version="2.13"
-			hash="sha256:eab5bdc5ae1df285c59f2a4f140a98fc33678a0bf61bdba67d9436ae26b46f6d"
+		<branch module="/gnu/cpio/cpio-2.14.tar.bz2"
+			version="2.14"
+			hash="sha256:fcdc15d60f7267a6fc7efcd6b9db7b6c8966c4f2fbbb964c24d41336fd3f2c12"
 			repo="ftp.gnu.org"/>
 	</autotools>
 
