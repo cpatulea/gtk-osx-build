@@ -93,7 +93,7 @@
 	</autotools>
 
 	<autotools id="faad2" autogenargs="" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
-		<branch module="faad2/archive/refs/tags/2.11.0.tar.gz"
+		<branch module="knik0/faad2/archive/refs/tags/2.11.0.tar.gz"
 			version="2.11.0" checkoutdir="faad2-2.11.0"
 			hash="sha256:720c1dc404439e0a9117aa144dc7ead56f1658adf4badbb39f959d6ad8eed489"
 			repo="github.com"/>
