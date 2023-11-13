@@ -7,6 +7,10 @@
 
         tidy -config ../tidy.conf -m gtk-osx-bootstrap.modules
   -->
+  <repository name="download.gnome.org"
+              default="yes"
+              href="https://download.gnome.org/sources/"
+              type="tarball" />
   <repository name="sourceforge"
               href="http://downloads.sourceforge.net/sourceforge/"
               type="tarball" />
