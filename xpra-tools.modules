@@ -133,9 +133,9 @@
 	</autotools>
 
 	<autotools id="curl" autogen-sh="configure">
-		<branch module="/download/curl-7.88.1.tar.xz"
-			version="7.88.1"
-			hash="sha256:1dae31b2a7c1fe269de99c0c31bb488346aab3459b5ffca909d6938249ae415f"
+		<branch module="/download/curl-8.4.0.tar.xz"
+			version="8.4.0"
+			hash="sha256:16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d"
 			repo="curl.haxx.se"/>
 		<dependencies>
 			<dep package="openssl"/>
