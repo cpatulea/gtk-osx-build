@@ -312,9 +312,9 @@
 
 	<distutils id="python3-uvloop" python3="1">
 		<branch
-			module="ba/86/6dda1760481abf244cbd3908b79a4520d757040ca9ec37a79fc0fd01e2a0/uvloop-0.17.0.tar.gz"
-			hash="sha256:0ddf6baf9cf11a1a22c71487f39f15b2cf78eb5bde7e5b45fbb99e8a9d91b9e1"
-			version="0.17.0">
+			module="9c/16/728cc5dde368e6eddb299c5aec4d10eaf25335a5af04e8c0abd68e2e9d32/uvloop-0.19.0.tar.gz"
+			hash="sha256:0246f4fd1bf2bf702e06b0d45ee91677ee5c31242f39aab4ea6fe0c51aedd0fd"
+			version="0.19.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
