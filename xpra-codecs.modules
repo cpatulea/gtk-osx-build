@@ -24,9 +24,9 @@
 	</autotools>
 
 	<autotools id="nasm" autogenargs="" autogen-sh="configure">
-		<branch module="/pub/nasm/releasebuilds/2.15.05/nasm-2.15.05.tar.xz"
-			version="2.15.05"
-			hash="sha256:3caf6729c1073bf96629b57cee31eeb54f4f8129b01902c73428836550b30a3f"
+		<branch module="/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz"
+			version="2.16.01"
+			hash="sha256:c77745f4802375efeee2ec5c0ad6b7f037ea9c87c92b149a9637ff099f162558"
 			repo="www.nasm.us">
 		</branch>
 	</autotools>
