@@ -19,7 +19,6 @@
               href="https://chromium.googlesource.com/"/>
   <repository name="webkit.org" type="tarball"
               href="http://www.webkitgtk.org/releases/"/>
-  <repository type="tarball" name="github-tarball" href="https://github.com/"/>
   <repository type="git" name="github" href="https://github.com/"/>
   <repository type="tarball" name="zlib" href="https://www.zlib.net/"/>
 
@@ -46,7 +45,7 @@
              autogenargs="--disable-documentation --disable-assembler"
              autogen-sh="autoreconf">
     <branch repo="lysator" module="nettle/nettle.git"
-            tag="nettle_3.7.3_release_20210606"/>
+            tag="nettle_3.9.1_release_20230601" />
     <dependencies>
       <dep package="gmp"/>
       <dep package="openssl"/>
@@ -56,22 +55,22 @@
   <autotools id="libtasn1" autogen-sh="configure">
     <!-- Git repository is missing GnuLib files required to build libtasn1
     <branch repo="git.gnu.org" tag="libtasn1_4_4"  module="libtasn1"/> -->
-    <branch repo="ftp.gnu.org" version="4.17.0"
-            module="libtasn1/libtasn1-4.17.0.tar.gz"
-             hash="sha256:ece7551cea7922b8e10d7ebc70bc2248d1fdd73351646a2d6a8d68a9421c45a5">
-      <patch file="libtasn1-inline-fix.patch" strip="1"/>
+    <branch repo="ftp.gnu.org" version="4.19.0"
+            module="libtasn1/libtasn1-4.19.0.tar.gz"
+             hash="sha256:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a">
     </branch>
   </autotools>
 
   <cmake id="zlib">
-    <branch repo="zlib" version="1.2.13"
-            module="libpng/zlib-1.2.13.tar.xz"
-            hash="sha256:d14c38e313afc35a9a8760dadf26042f51ea0f5d154b0630a31da0540107fb98"/>
+    <branch repo="zlib" version="1.3"
+            module="zlib-1.3.tar.xz"
+            hash="sha256:8a9ba2898e1d0d774eca6ba5b4627a11e5588ba85c8851336eb38de4683050a7"/>
   </cmake>
 
   <autotools id="p11-kit" autogen-sh="autoreconf"
              autogenargs="--without-trust-paths">
-    <branch repo="github" module="p11-glue/p11-kit" revision="0.23.22"/>
+    <branch repo="github" module="p11-glue/p11-kit" revision="0.25.2"/>
+    </branch>
     <dependencies>
       <dep package="libtasn1"/>
     </dependencies>
@@ -82,8 +81,10 @@
 
   <autotools id="gnutls" autogen-sh="autoreconf"
              autogenargs="--disable-gtk-doc-html --with-included-unistring">
-    <branch repo="gnupg.org" version="3.7.7"
-            module="gcrypt/gnutls/v3.7/gnutls-3.7.7.tar.xz">
+    <branch repo="gnupg.org" version="3.8.1"
+            module="gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz"
+            hash="b6e4e8bac3a950a3a1b7bdb0904979d4ab420a81e74de8636dd50b467d36f5a9"
+            >
     </branch>
     <dependencies>
       <dep package="libunistring"/>
@@ -97,19 +98,19 @@
   <autotools id="libgpg-error" autogen-sh="autoreconf"
              autogenargs="--disable-doc">
     <branch repo="git.gnupg.org" module="libgpg-error"
-            revision="libgpg-error-1.43"/>
+            revision="libgpg-error-1.47"/>
   </autotools>
 
   <autotools id="libgcrypt" autogen-sh="autoreconf"
              autogenargs="--disable-asm --disable-doc">
-    <branch repo="git.gnupg.org" module="libgcrypt" revision="libgcrypt-1.9.4"/>
+    <branch repo="git.gnupg.org" module="libgcrypt" revision="libgcrypt-1.10.2"/>
     <dependencies>
       <dep package="libgpg-error" />
     </dependencies>
   </autotools>
 
   <autotools id="gpg">
-    <branch repo="git.gnupg.org" module="gnupg" revision="gnupg-2.3.3"/>
+    <branch repo="git.gnupg.org" module="gnupg" revision="gnupg-2.4.3"/>
     <dependencies>
       <dep package="libgpg-error"/>
       <dep package="libgcrypt"/>
@@ -117,7 +118,7 @@
   </autotools>
 
   <meson id="libsecret" mesonargs="-Dvapi=disabled -Dgtk_doc=disabled">
-    <branch module="libsecret" revision="0.20.4" />
+    <branch module="libsecret" revision="0.21.1" />
     <dependencies>
       <dep package="glib"/>
       <dep package="libgcrypt"/>
@@ -144,7 +145,7 @@
   </autotools>
 
   <meson id="glib-networking" mesonargs="-Dopenssl=enabled">
-         <branch module="glib-networking" revision="2.68.0"/>
+         <branch module="glib-networking" revision="2.78.0"/>
     <dependencies>
       <dep package="gnutls"/>
       <dep package="glib"/>
@@ -169,7 +170,7 @@
 
   <autotools id="libwebp" autogen-sh="autoreconf"
              autogenargs="--enable-libwebpmux --enable-libwebpdecoder">
-    <branch repo="chromium" module="webm/libwebp" revision="1.2.2"/>
+    <branch repo="chromium" module="webm/libwebp" revision="1.3.2"/>
   </autotools>
 
   <!-- This is the stable release of WebKitGTK, for GTK 3.x. Use it if you need

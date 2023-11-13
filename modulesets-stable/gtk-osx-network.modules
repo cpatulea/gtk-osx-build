@@ -103,18 +103,18 @@
   </autotools>
   <!---->
   <cmake id="zlib">
-    <branch module="zlib-1.2.13.tar.gz"
-            version="1.2.13"
-            hash="sha256:b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30"
+    <branch module="zlib-1.3.tar.gz"
+            version="1.3"
+            hash="sha256:ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e"
             repo="zlib" />
   </cmake>
   <!---->
   <autotools id="p11-kit"
              autogen-sh="configure"
              autogenargs="--without-trust-paths">
-    <branch module="p11-glue/p11-kit/releases/download/0.24.1/p11-kit-0.24.1.tar.xz"
-            version="0.24.1"
-            hash="sha256:d8be783efd5cd4ae534cee4132338e3f40f182c3205d23b200094ec85faaaef8"
+    <branch module="p11-glue/p11-kit/releases/download/0.25.2/p11-kit-0.25.2.tar.xz"
+            version="0.25.2"
+            hash="sha256:44be0f5797464ca5b36c68c8fb9152c2d34e91f6ba910ad3945dd7cdd2557cc3"
             repo="github-tarball">
       <patch file="p11-kit-libintl.patch"
              strip="1"/>
@@ -128,9 +128,9 @@
   <autotools id="gnutls"
              autogen-sh="autoreconf"
              autogenargs="--disable-gtk-doc-html --with-included-unistring">
-    <branch module="gcrypt/gnutls/v3.8/gnutls-3.8.0.tar.xz"
-            version="3.8.0"
-            hash="sha256:0ea0d11a1660a1e63f960f157b197abe6d0c8cb3255be24e1fb3815930b9bdc5"
+    <branch module="gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz"
+            version="3.8.1"
+            hash="sha256:ba8b9e15ae20aba88f44661978f5b5863494316fe7e722ede9d069fe6294829c"
             repo="gnupg.org" >
       <patch file="gnutls-pkg-config-pc.patch"
              strip="1"/>
@@ -171,9 +171,9 @@
   <!---->
   <meson id="libsecret"
          mesonargs="-Dvapi=disabled -Dgtk_doc=disabled">
-    <branch module="libsecret/0.20/libsecret-0.20.5.tar.xz"
-            version="0.20.5"
-            hash="sha256:3fb3ce340fcd7db54d87c893e69bfc2b1f6e4d4b279065ffe66dac9f0fd12b4d"
+    <branch module="libsecret/0.21/libsecret-0.21.1.tar.xz"
+            version="0.21.1"
+            hash="sha256:674f51323a5f74e4cb7e3277da68b5afddd333eca25bc9fd2d820a92972f90b1"
             />
     <dependencies>
       <dep package="glib" />
@@ -228,9 +228,9 @@
   <!---->
   <meson id="glib-networking"
          mesonargs="-Dopenssl=enabled">
-    <branch module="glib-networking/2.76/glib-networking-2.76.0.tar.xz"
-            version="2.76.0"
-            hash="sha256:149a05a179e629a538be25662aa324b499d7c4549c5151db5373e780a1bf1b9a" />
+    <branch module="glib-networking/2.78/glib-networking-2.78.0.tar.xz"
+            version="2.78.0"
+            hash="sha256:52fe4ce93f7dc51334b102894599858d23c8a65ac4a1110b30920565d68d3aba" />
     <dependencies>
       <dep package="libproxy"/>
       <dep package="gnutls" />
@@ -265,9 +265,9 @@
   <autotools id="libwebp"
              autogen-sh="configure"
              autogenargs="--enable-libwebpmux --enable-libwebpdecoder">
-    <branch module="webp/libwebp-1.3.0.tar.gz"
-            version="1.3.0"
-            hash="sha256:64ac4614db292ae8c5aa26de0295bf1623dbb3985054cb656c55e67431def17c"
+    <branch module="webp/libwebp-1.3.2.tar.gz"
+            version="1.3.2"
+            hash="sha256:2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4"
             repo="webm" />
   </autotools>
   <!--
