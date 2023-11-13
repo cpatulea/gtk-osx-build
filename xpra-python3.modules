@@ -600,7 +600,7 @@
 		<branch
 			module="0e/ef/0acbb4ac130dd5d9395370af72b6a551a887b27cd7efbbeac424e72707bb/qrencode-1.2.tar.gz"
 			hash="sha256:10942f76641e989d429e53e6b590f50420f883ded034f1fac767f55229678c6c"
-			version="1.2.0"/>
+			version="1.2"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="libqrencode"/>
