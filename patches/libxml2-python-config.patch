@@ -1,8 +1,6 @@
-diff --git a/configure.ac b/configure.ac
-index fa24ca66..79dab797 100644
---- a/configure.ac
-+++ b/configure.ac
-@@ -754,7 +754,7 @@ dnl
+--- a/configure.ac	2023-11-13 20:03:45.958187290 +0700
++++ b/configure.ac	2023-11-13 20:03:49.518161316 +0700
+@@ -757,7 +757,7 @@
  
  AS_IF([test "x$with_python" != "xno"], [
      AM_PATH_PYTHON
