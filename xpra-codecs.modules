@@ -92,12 +92,12 @@
 			repo="github.com"/>
 	</autotools>
 
-	<autotools id="faad2" autogenargs="" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
+	<cmake id="faad2">
 		<branch module="knik0/faad2/archive/refs/tags/2.11.1.tar.gz"
 			version="2.11.1" checkoutdir="faad2-2.11.1"
 			hash="sha256:72dbc0494de9ee38d240f670eccf2b10ef715fd0508c305532ca3def3225bb06"
 			repo="github.com"/>
-	</autotools>
+	</cmake>
 
 	<autotools id="flac" autogen-sh="configure">
 		<branch module="releases/flac/flac-1.4.3.tar.xz"
