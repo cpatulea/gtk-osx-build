@@ -296,9 +296,9 @@
 
 	<distutils id="python3-paramiko" python3="1">
 		<branch
-			module="44/03/158ae1dcb950bd96f04038502238159e116fafb27addf5df1ba35068f2d6/paramiko-3.3.1.tar.gz"
-			hash="sha256:6a3777a961ac86dbef375c5f5b8d50014a1a96d0fd7f054a43bc880134b0ff77"
-			version="3.3.1">
+			module="cc/af/11996c4df4f9caff87997ad2d3fd8825078c277d6a928446d2b6cf249889/paramiko-3.4.0.tar.gz"
+			hash="sha256:aac08f26a31dc4dffd92821527d1682d99d52f9ef6851968114a8728f3c274d3"
+			version="3.4.0">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
