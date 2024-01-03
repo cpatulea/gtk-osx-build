@@ -5,7 +5,7 @@
   include/perfhash.h include/strlist.h include/tables.h include/warnings.h \
   x86/iflaggen.h x86/insnsi.h x86/regs.h
 -asm/warnings.$(O): asm/warnings.c config/config.h config/msvc.h \
-+asm/warnings.$(O): $(top_srcdir)asm/warnings.c config/config.h config/msvc.h \
++asm/warnings.$(O): $(top_srcdir)/asm/warnings.c config/config.h config/msvc.h \
   config/unconfig.h config/unknown.h config/watcom.h include/compiler.h \
   include/error.h include/nasmint.h include/warnings.h
  common/common.$(O): common/common.c asm/directiv.h asm/pptok.h asm/preproc.h \
