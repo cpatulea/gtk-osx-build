@@ -189,9 +189,13 @@
     </dependencies>
   </autotools>
   <!---->
+  <!--
+    disable-arm-a64-neon and disable-arm-neon are required when building on
+    Apple Silicon. See https://gitlab.freedesktop.org/pixman/pixman/-/issues/59
+  -->
   <autotools id="pixman"
              autogen-sh="configure"
-             autogenargs="--disable-gtk --disable-mmx">
+             autogenargs="--disable-gtk --disable-mmx --disable-arm-a64-neon --disable-arm-neon">
     <branch module="releases/pixman-0.42.2.tar.gz"
             version="0.42.2"
             hash="sha512:0a4e327aef89c25f8cb474fbd01de834fd2a1b13fdf7db11ab72072082e45881cd16060673b59d02054b1711ae69c6e2395f6ae9214225ee7153939efcd2fa5d"
