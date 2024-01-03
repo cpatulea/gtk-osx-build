@@ -6,5 +6,6 @@ build_policy = "updated-deps"
 modules = ["python3", "meta-osx-xpra-deps"]
 
 #change moduleset
-moduleset="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master/xpra-gtk3.modules"
+moduleset="xpra-gtk3.modules"
+modulesets_dir = "."
 #os.environ["SSL_CERT_FILE"] = "/Users/osx/gtk/inst/etc/ssl/cacert.pem"
