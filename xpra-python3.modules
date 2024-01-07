@@ -348,6 +348,7 @@
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
+			<dep package="python3-wheel"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
