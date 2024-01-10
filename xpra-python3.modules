@@ -206,9 +206,9 @@
 
 	<distutils id="python3-pyasn1" python3="1">
 		<branch
-			module="p/pyasn1/pyasn1-0.5.0.tar.gz"
-			hash="sha256:97b7290ca68e62a832558ec3976f15cbf911bf5d7c7039d8b861c2a0ece69fde"
-			version="0.5.0">
+			module="p/pyasn1/pyasn1-0.5.1.tar.gz"
+			hash="sha256:6d391a96e59b23130a5cfa74d6fd7f388dbbe26cc8f1edf39fdddf08d9d6676c"
+			version="0.5.1">
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
