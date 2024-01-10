@@ -770,9 +770,9 @@
 
 	<distutils id="python3-idna" python3="1">
 		<branch
-			module="i/idna/idna-3.4.tar.gz"
-			hash="sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"
-			version="3.4"/>
+			module="i/idna/idna-3.6.tar.gz"
+			hash="sha256:9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca"
+			version="3.6"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
