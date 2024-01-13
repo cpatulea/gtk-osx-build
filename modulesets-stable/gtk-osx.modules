@@ -164,7 +164,7 @@
   </meson>
   <!---->
   <cmake id="freetype"
-         cmakeargs="-DCMAKE_DISABLE_FIND_PACKAGE_BZip2=TRUE -D BUILD_SHARED_LIBS=true -D CMAKE_BUILD_TYPE=Release">
+         cmakeargs="-DFT_DISABLE_BROTLI=ON -DCMAKE_DISABLE_FIND_PACKAGE_BZip2=TRUE -D BUILD_SHARED_LIBS=true -D CMAKE_BUILD_TYPE=Release">
 
     <branch module="freetype/freetype-2.13.2.tar.xz"
             version="2.13.2"
