@@ -630,6 +630,7 @@
 			hash="sha256:3dd0a7b3acd7e0b8ffd3f5331b29a3aaebe79a03323e61efeece38627a6020b3"
 			version="10.0">
 			<patch file="pyobjc-unused-parameter.patch" strip="1"/>
+			<patch file="pyobjc-core-xcode-version-check.patch" strip="2"/>
 		</branch>
 		<dependencies>
 			<dep package="python3"/>
