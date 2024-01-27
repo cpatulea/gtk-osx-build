@@ -407,7 +407,9 @@
 		<branch
 			module="d/dnspython/dnspython-2.4.2.tar.gz"
 			hash="sha256:8dcfae8c7460a2f84b4072e26f1c9f4101ca20c071649cb7c34e8b6a93d58984"
-			version="2.4.2"/>
+			version="2.4.2">
+			<patch file="dnspython-setup-py.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
