@@ -103,9 +103,9 @@
   </autotools>
   <!---->
   <cmake id="zlib">
-    <branch module="zlib-1.3.tar.gz"
-            version="1.3"
-            hash="sha256:ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e"
+    <branch module="zlib-1.3.1.tar.gz"
+            version="1.3.1"
+            hash="sha256:38ef96b8dfe510d42707d9c781877914792541133e1870841463bfa73f883e32"
             repo="zlib" />
   </cmake>
   <!---->
