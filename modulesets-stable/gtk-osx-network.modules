@@ -54,8 +54,8 @@
              autogenargs="shared"
              makeinstallargs="install_sw"
              supports-non-srcdir-builds="no">
-    <branch module="openssl-3.1.4.tar.gz" version="3.1.4" repo="openssl"
-	    hash="sha256:840af5366ab9b522bde525826be3ef0fb0af81c6a9ebd84caa600fea1731eee3"/>
+    <branch module="openssl-3.1.5.tar.gz" version="3.1.5" repo="openssl"
+	    hash="sha256:6ae015467dabf0469b139ada93319327be24b98251ffaeceda0221848dc09262"/>
   </autotools>
   <!--
     Rudely demands TeX to build documentation
