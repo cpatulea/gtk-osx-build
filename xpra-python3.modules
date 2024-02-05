@@ -187,9 +187,9 @@
 
 	<distutils id="python3-cryptography" python3="1">
 		<branch
-                        module="c/cryptography/cryptography-42.0.0.tar.gz"
-                        hash="sha256:6cf9b76d6e93c62114bd19485e5cb003115c134cf9ce91f8ac924c44f8c8c3f4"
-                        version="42.0.0"/>
+                        module="c/cryptography/cryptography-42.0.2.tar.gz"
+                        hash="sha256:e0ec52ba3c7f1b7d813cd52649a5b3ef1fc0d433219dc8c93827c57eab6cf888"
+                        version="42.0.2"/>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
