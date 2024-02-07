@@ -676,9 +676,9 @@
 
 	<distutils id="python3-pyobjc-framework-avfoundation" python3="1">
 		<branch
-			module="p/pyobjc-framework-AVFoundation/pyobjc-framework-AVFoundation-10.0.tar.gz"
-			hash="sha256:40366a8c6bb964e7b7263e8cf060350f69ad365e6a5356d6ccab9f256a9987f7"
-			version="10.0">
+			module="p/pyobjc-framework-AVFoundation/pyobjc-framework-AVFoundation-10.1.tar.gz"
+			hash="sha256:07e065c6904fbd6afc434a79888461cdd4097b4153dd592dcbe9c8bef01ee701"
+			version="10.1">
 			<patch file="patches/pyobjc-framework-AVFoundation-xcode-version-check.patch" strip="2"/>
 		</branch>
 		<dependencies>
