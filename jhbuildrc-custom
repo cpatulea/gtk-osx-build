@@ -1,6 +1,6 @@
 _gtk_osx_use_jhbuild_python = True
 
-setup_sdk(target="12", sdk_version="12", architectures=["x86_64"])
+setup_sdk(target="12", sdk_version="12")
 build_policy = "updated-deps"
 
 modules = ["python3", "meta-osx-xpra-deps"]
