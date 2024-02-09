@@ -1,0 +1,79 @@
+# Based on https://github.com/yousseb/meld/blob/4f5cce0cf6a878404307011d8da5b8c9946948af/.github/workflows/main.yml
+
+name: Mac OS
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  # intltool needs XML::Parser, which system perl already has (don't use
+  # Homebrew /usr/local/bin/perl).
+  PERL: /usr/bin/perl
+
+  # tango-icon-theme also needs system perl, but in a different variable.
+  INTLTOOL_PERL: /usr/bin/perl
+
+  # Keep Python (jhbuild) stdout vs stderr in order.
+  PYTHONUNBUFFERED: 1
+
+jobs:
+  build:
+    name: ${{ matrix.runner }} ${{ matrix.arch }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-12
+            arch: x86_64
+          - runner: macos-14
+            arch: arm64
+    steps:
+      - uses: actions/checkout@v3
+
+      # https://github.com/Xpra-org/xpra/blob/master/docs/Build/MacOS.md
+      - name: gtk-osx-setup.sh
+        run: sh ./gtk-osx-setup.sh
+
+      - name: Prepend jhbuild to PATH
+        run: echo "$HOME/.new_local/bin/" >> $GITHUB_PATH
+
+      - name: Configure `jhbuild` to use our `jhbuildrc-gtk-osx`
+        run: cp -af jhbuildrc-gtk-osx $HOME/.config/jhbuildrc
+
+      - name: Configure `jhbuild` to use our modules
+        run: cp -af jhbuildrc-custom $HOME/.config/jhbuildrc-custom
+
+      - name: jhbuild update
+        run: jhbuild update
+
+      - name: jhbuild bootstrap-gtk-osx
+        run: jhbuild bootstrap-gtk-osx
+
+      - name: jhbuild build
+        run: jhbuild build
+
+      - name: Upload config.log files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: config-log-${{ matrix.runner }}-${{ matrix.arch }}
+          path: ~/.cache/jhbuild/build/*/config.log
+
+      - name: Upload meson logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: meson-logs-${{ matrix.runner }}-${{ matrix.arch }}
+          path: ~/.cache/jhbuild/build/*/meson-logs/meson-log.txt
+
+      - name: Zip gtk/inst directory
+        if: always()
+        run: zip -r gtk-inst.zip ~/gtk/inst/
+
+      - name: Upload gtk-inst.zip
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gtk-inst-${{ matrix.runner }}-${{ matrix.arch }}
+          path: gtk-inst.zip
