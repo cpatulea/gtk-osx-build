@@ -117,6 +117,7 @@
     <dependencies>
       <dep package="libffi" />
       <dep package="libpcre2" />
+      <dep package="libxml2" />
     </dependencies>
   </meson>
   <!--
