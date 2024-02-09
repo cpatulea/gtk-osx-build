@@ -212,9 +212,9 @@
 	</cmake>
 
 	<cmake id="libavif">
-		<branch module="AOMediaCodec/libavif/archive/refs/tags/v1.0.3.tar.gz"
-			version="1.0.3" checkoutdir="libavif-1.0.3"
-			hash="sha256:35e3cb3cd7158209dcc31d3bf222036de5b9597e368a90e18449ecc89bb86a19"
+		<branch module="AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz"
+			version="1.0.4" checkoutdir="libavif-1.0.4"
+			hash="sha256:dc56708c83a4b934a8af2b78f67f866ba2fb568605c7cf94312acf51ee57d146"
 			repo="github.com">
 		</branch>
 	</cmake>
