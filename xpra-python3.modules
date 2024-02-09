@@ -171,7 +171,9 @@
 		<branch
 			module="s/setuptools-rust/setuptools-rust-1.8.1.tar.gz"
 			hash="sha256:94b1dd5d5308b3138d5b933c3a2b55e6d6927d1a22632e509fcea9ddd0f7e486"
-			version="1.8.1"/>
+			version="1.8.1">
+			<patch file="setuptools-rust-setup-py.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="python3-semantic-version"/>
@@ -189,7 +191,9 @@
 		<branch
                         module="c/cryptography/cryptography-42.0.2.tar.gz"
                         hash="sha256:e0ec52ba3c7f1b7d813cd52649a5b3ef1fc0d433219dc8c93827c57eab6cf888"
-                        version="42.0.2"/>
+                        version="42.0.2">
+			<patch file="cryptography-setup-py.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 			<dep package="openssl"/>
@@ -407,7 +411,9 @@
 		<branch
 			module="d/dnspython/dnspython-2.4.2.tar.gz"
 			hash="sha256:8dcfae8c7460a2f84b4072e26f1c9f4101ca20c071649cb7c34e8b6a93d58984"
-			version="2.4.2"/>
+			version="2.4.2">
+			<patch file="dnspython-setup-py.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
@@ -672,9 +678,9 @@
 
 	<distutils id="python3-pyobjc-framework-avfoundation" python3="1">
 		<branch
-			module="p/pyobjc-framework-AVFoundation/pyobjc-framework-AVFoundation-10.0.tar.gz"
-			hash="sha256:40366a8c6bb964e7b7263e8cf060350f69ad365e6a5356d6ccab9f256a9987f7"
-			version="10.0">
+			module="p/pyobjc-framework-AVFoundation/pyobjc-framework-AVFoundation-10.1.tar.gz"
+			hash="sha256:07e065c6904fbd6afc434a79888461cdd4097b4153dd592dcbe9c8bef01ee701"
+			version="10.1">
 			<patch file="patches/pyobjc-framework-AVFoundation-xcode-version-check.patch" strip="2"/>
 		</branch>
 		<dependencies>
@@ -786,7 +792,9 @@
 		<branch
 			module="i/idna/idna-3.6.tar.gz"
 			hash="sha256:9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca"
-			version="3.6"/>
+			version="3.6">
+			<patch file="idna-setup-py.patch" strip="1"/>
+		</branch>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
