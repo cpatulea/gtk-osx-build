@@ -259,9 +259,9 @@
 
 	<distutils id="python3-cython" python3="1">
 		<branch
-			module="C/Cython/Cython-3.0.6.tar.gz"
-			hash="sha256:399d185672c667b26eabbdca420c98564583798af3bc47670a8a09e9f19dd660"
-			version="3.0.6"/>
+			module="C/Cython/Cython-3.0.8.tar.gz"
+			hash="sha256:8333423d8fd5765e7cceea3a9985dd1e0a5dfeb2734629e1a2ed2d6233d39de6"
+			version="3.0.8"/>
 		<dependencies>
 			<dep package="python3"/>
 		</dependencies>
