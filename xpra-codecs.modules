@@ -115,10 +115,10 @@
 	</autotools>
 
 	<autotools id="opus" autogen-sh="autoreconf" supports-non-srcdir-builds="no">
-		<branch module="xiph/opus/archive/refs/tags/v1.4.tar.gz"
-			version="1.4" checkoutdir="opus-1.4"
-			hash="sha256:659e6b223e42a51b0a898632b9a5f406ccd5c2e00aa526ddd1264789774b94e5"
-			repo="github.com"/>
+		<branch module="releases/opus/opus-1.5.1.tar.gz"
+			version="1.5.1"
+			hash="sha256:b84610959b8d417b611aa12a22565e0a3732097c6389d19098d844543e340f85"
+			repo="downloads.xiph.org">
 	</autotools>
 
 	<autotools id="libvpx"
