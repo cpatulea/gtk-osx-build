@@ -251,7 +251,7 @@ fi
 
 $PIPENV install
 
-BASEURL="https://gitlab.gnome.org/GNOME/gtk-osx/raw/master"
+BASEURL="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master"
 
 config_dir=""
 if test -n "$XDG_CONFIG_HOME"; then
