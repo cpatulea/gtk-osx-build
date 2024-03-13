@@ -292,6 +292,7 @@
 			version="1.5.0"/>
 		<dependencies>
 			<dep package="python3"/>
+			<dep package="python3-cffi"/>
 		</dependencies>
 		<after>
 			<dep package="python3"/>
