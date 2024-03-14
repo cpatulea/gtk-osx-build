@@ -96,7 +96,7 @@ fi
 #with python2 any more, and the Apple-provided python3 because it
 #doesn't include a usable libpython for libxml2 to link against.
 
-export PYTHON_CONFIGURE_OPTS="--enable-shared"
+export PYTHON_CONFIGURE_OPTS="--enable-shared --with-system-ffi"
 #This really means pyenv's *python* version. It's poorly named but
 #it's defined by pyenv so it can't be changed.
 export PYENV_VERSION=$PYTHON_VERSION
