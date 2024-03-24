@@ -87,15 +87,6 @@
     </after>
   </metamodule>
   <!---->
-  <autotools id="libffi"
-             autogen-sh="configure"
-             autogenargs="--disable-multi-os-directory --disable-docs">
-    <branch module="libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz"
-            version="3.4.6"
-            hash="sha256:b0dea9df23c863a7a50e825440f3ebffabd65df1497108e5d437747843895a4e"
-            repo="github-tarball" />
-  </autotools>
-  <!---->
   <autotools id="libpcre2"
              autogen-sh="configure"
              autogenargs="--enable-pcre2-16 --enable-pcre2-32 --enable-jit">
@@ -115,7 +106,6 @@
              strip="1"/>
     </branch>
     <dependencies>
-      <dep package="libffi" />
       <dep package="libpcre2" />
       <dep package="libxml2" />
     </dependencies>
