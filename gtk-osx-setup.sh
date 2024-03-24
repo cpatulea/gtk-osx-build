@@ -100,7 +100,6 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 #This really means pyenv's *python* version. It's poorly named but
 #it's defined by pyenv so it can't be changed.
 export PYENV_VERSION=$PYTHON_VERSION
-export PYTHONSTRICTEXTENSIONBUILD=1
 $PYENV install -v $PYENV_VERSION
 PIP="$PYENV_ROOT/shims/pip3"
 
