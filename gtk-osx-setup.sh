@@ -249,7 +249,7 @@ if test -d "$SDKROOT"; then
     export CFLAGS="-isysroot $SDKROOT -I$SDKROOT/usr/include"
 fi
 
-$PIPENV install
+$PIPENV install || exit 1
 
 BASEURL="https://raw.githubusercontent.com/Xpra-org/gtk-osx-build/master"
 
